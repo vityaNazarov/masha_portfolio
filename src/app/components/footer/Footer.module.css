@@ -1,0 +1,197 @@
+.container {
+  width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__text {
+  color: rgb(251, 248, 248);
+  font-family: Urbanist;
+  font-style: italic;
+  font-size: 62px;
+  font-weight: 400;
+  line-height: 74px;
+  margin-top: 80px;
+  margin-bottom: 56px;
+}
+
+.footer__contact_link {
+  border-radius: 32px;
+  background: rgb(251, 248, 248);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0 72px;
+  height: 111px;
+  margin-bottom: 65px;
+}
+
+.footer__contact_text {
+  color: rgb(30, 30, 30);
+  font-family: Urbanist;
+  font-style: italic;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer__contact_svg {
+  width: 64px;
+  height: 64px;
+}
+
+.footer__contact_linkedin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 21px;
+}
+
+.footer__linkedin_text {
+  color: rgb(251, 248, 248);
+  font-family: Urbanist;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer__contact_mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 64px;
+}
+
+.footer__mail_text {
+  color: rgb(251, 248, 248);
+  font-family: Urbanist;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer__all_rights {
+  color: rgb(251, 248, 248);
+  font-family: Urbanist;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  margin-bottom: 80px;
+}
+
+/* 
+ */
+/* 
+ */
+/* 
+ */
+
+@media screen and (min-width: 390px) and (max-width: 480px) {
+  .container {
+    width: 390px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__text {
+    color: rgb(251, 248, 248);
+    font-family: Urbanist;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 43px;
+    margin-top: 190px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  .footer__contact_link {
+    border-radius: 24px;
+    background: rgb(251, 248, 248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 56px;
+    height: 81px;
+    margin-bottom: 123px;
+  }
+
+  .footer__contact_text {
+    color: rgb(30, 30, 30);
+    font-family: Urbanist;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .footer__contact_svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer__contact_linkedin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 18px;
+  }
+
+  .footer__linkedin_text {
+    color: rgb(251, 248, 248);
+    font-family: Urbanist;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .footer__contact_mail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 120px;
+  }
+
+  .footer__mail_text {
+    color: rgb(251, 248, 248);
+    font-family: Urbanist;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .footer__contact_svg {
+  }
+
+  .footer__all_rights {
+    color: rgb(251, 248, 248);
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 72px;
+  }
+}
