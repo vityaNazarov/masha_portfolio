@@ -41,6 +41,13 @@
   gap: 28px;
 }
 
+.project__block_maven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
 .project__left_block {
   border-radius: 48px 0px 0px 48px;
   background: rgb(30, 30, 30);
@@ -116,6 +123,22 @@
   line-height: 1.5;
 }
 
+.project__used_tec_item_maven {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: rgb(251, 248, 248);
+  padding: 0 16px;
+  height: 40px;
+
+  color: rgb(30, 30, 30);
+  font-family: Urbanist;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 .project__right_block_link {
   display: flex;
   justify-content: center;
@@ -135,6 +158,7 @@
 .project__img_maven {
   width: 548px;
   height: 314px;
+  margin-bottom: 50px;
 }
 
 .project__left_block_maven {
@@ -338,6 +362,7 @@
   .project__img_maven {
     width: 334px;
     height: 178px;
+    margin-bottom: 0;
   }
 
   .project__left_block_maven {

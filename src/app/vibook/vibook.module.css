@@ -23,6 +23,7 @@
 .link_back_svg {
   width: 24px;
   height: 24px;
+  transform: rotate(180deg);
 }
 
 .link_back_text {
@@ -372,18 +373,19 @@
 
 .footer_link {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 
 .footer_link_svg_right {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer_link_svg_left {
   transform: rotate(180deg);
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer_link_text {
@@ -868,5 +870,16 @@
     font-size: 16px;
     font-weight: 200;
     line-height: 19px;
+  }
+
+  .footer_link_svg_right {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer_link_svg_left {
+    transform: rotate(180deg);
+    width: 18px;
+    height: 18px;
   }
 }
