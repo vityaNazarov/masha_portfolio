@@ -146,6 +146,15 @@
   gap: 10px;
 }
 
+.project__right_block_svg {
+  transition: transform 250ms ease-in-out;
+}
+
+.project__right_block_link:hover .project__right_block_svg {
+  transform: translate(5%, -5%);
+  transition: transform 250ms ease-in-out;
+}
+
 .project__right_text {
   color: rgb(255, 255, 255);
   font-family: Urbanist;

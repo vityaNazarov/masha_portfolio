@@ -1,47 +1,100 @@
+"use client";
+
+import { motion } from "framer-motion";
 import React from "react";
 import css from "./ezygo.module.css";
 import Link from "next/link";
 import Image from "next/image";
 
+const leftAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
+
+const rightAnimation = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
+
+const topAnimation = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
+
 export default function page() {
   return (
     <main>
-      <section className={css.ezygo__section}>
+      <motion.section
+        initial="hidden"
+        whileInView="visible"
+        className={css.ezygo__section}
+      >
         <div className={css.container}>
           <div className={css.ezygo}>
-            <Link href="/" className={css.link_back}>
-              <svg
-                className={css.link_back_svg}
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 12L19 12"
-                  stroke="#191919"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M12 5L19 12L12 19"
-                  stroke="#191919"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+            <motion.div custom={3} variants={leftAnimation}>
+              <Link href="/" className={css.link_back}>
+                <svg
+                  className={css.link_back_svg}
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 12L19 12"
+                    stroke="#191919"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M12 5L19 12L12 19"
+                    stroke="#191919"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
 
-              <span className={css.link_back_text}>Homepage</span>
-            </Link>
+                <span className={css.link_back_text}>Homepage</span>
+              </Link>
+            </motion.div>
             <div className={css.main_img_block}>
-              <Image
-                src="/desktop/ezygo/ezygo-main.png"
-                alt=""
-                width="602"
-                height="468"
-              />
-              <h2 className={css.main_img_name}>EZYGO</h2>
+              <motion.div custom={1} variants={topAnimation}>
+                <Image
+                  src="/desktop/ezygo/ezygo-main.png"
+                  alt=""
+                  width="602"
+                  height="468"
+                />
+              </motion.div>
+              <motion.h2
+                custom={2}
+                variants={topAnimation}
+                className={css.main_img_name}
+              >
+                EZYGO
+              </motion.h2>
             </div>
             <div className={css.about}>
               <div className={css.about_title_block}>
@@ -1034,7 +1087,7 @@ export default function page() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 }

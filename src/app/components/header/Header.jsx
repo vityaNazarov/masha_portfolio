@@ -1,21 +1,54 @@
+"use client";
+
+import { motion } from "framer-motion";
 import css from "./Header.module.css";
 import Link from "next/link";
 import React from "react";
 
+const textAnimation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
+
 export default function Header() {
   return (
-    <section className={css.header__section}>
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      className={css.header__section}
+    >
       <div className={css.container}>
         <header className={css.header}>
-          <div className={css.header__title_name}>
+          <motion.div
+            variants={textAnimation}
+            className={css.header__title_name}
+          >
             <span>Mariia Nazarova </span>|<span> Product Designer</span>
-          </div>
-          <p className={css.greetings}>Hi there!</p>
-          <p className={css.header__text}>
+          </motion.div>
+          <motion.p
+            custom={1}
+            variants={textAnimation}
+            className={css.greetings}
+          >
+            Hi there!
+          </motion.p>
+          <motion.p
+            custom={2}
+            variants={textAnimation}
+            className={css.header__text}
+          >
             I&#39;m Mariia and my job is to implement my design thinking into
             digital projects and make them high quality.
-          </p>
-          <nav>
+          </motion.p>
+          <motion.nav custom={4} variants={textAnimation}>
             <Link href="/about" className={css.header__btn_about}>
               <span className={css.header__btn_text}>About me</span>
               <svg
@@ -42,9 +75,9 @@ export default function Header() {
                 />
               </svg>
             </Link>
-          </nav>
+          </motion.nav>
         </header>
       </div>
-    </section>
+    </motion.section>
   );
 }

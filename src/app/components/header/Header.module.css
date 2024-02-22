@@ -56,11 +56,23 @@
   padding-right: 72px;
   height: 111px;
   margin-bottom: 99px;
+  /* transition: all 250ms ease-in-out; */
+}
+
+/* .header__btn_about:hover {
+  transform: scale(1.1);
+  transition: all 250ms ease-in-out;
+} */
+
+.header__btn_about:hover .header__btn_svg {
+  transform: translate(5%, -5%);
+  transition: all 250ms ease-in-out;
 }
 
 .header__btn_svg {
   width: 64px;
   height: 64px;
+  transition: all 250ms ease-in-out;
 }
 
 .header__btn_text {

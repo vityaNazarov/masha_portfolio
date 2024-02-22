@@ -1,11 +1,43 @@
+"use client";
+
+import { motion } from "framer-motion";
 import css from "./Projects.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+const textAnimation = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.15 },
+  }),
+};
+
+const projectsAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    transition: { delay: custom * 0.3 },
+  }),
+};
+
 export default function Projects() {
   return (
-    <section className={css.projects__section}>
+    <motion.section
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.08, once: true }}
+      className={css.projects__section}
+    >
       <div className={css.container}>
         <div className={css.projects}>
           <h1 className={css.projects__title}>Projects</h1>
@@ -16,9 +48,18 @@ export default function Projects() {
                   <h2 className={css.project__project_name}>EZYGO</h2>
                   <span className={css.project__project_data}>2024</span>
                 </div>
-                <div className={css.project__img_block}>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.08, once: true }}
+                  className={css.project__img_block}
+                >
                   <ul className={css.project__img_block_list}>
-                    <li className={css.project__img_block_item}>
+                    <motion.li
+                      variants={projectsAnimation}
+                      custom={1}
+                      className={css.project__img_block_item}
+                    >
                       <Image
                         width="137"
                         height="300"
@@ -26,8 +67,12 @@ export default function Projects() {
                         alt=""
                         className={css.project__img}
                       />
-                    </li>
-                    <li className={css.project__img_block_item}>
+                    </motion.li>
+                    <motion.li
+                      variants={projectsAnimation}
+                      custom={1.5}
+                      className={css.project__img_block_item}
+                    >
                       <Image
                         width="137"
                         height="300"
@@ -35,8 +80,12 @@ export default function Projects() {
                         alt=""
                         className={css.project__img}
                       />
-                    </li>
-                    <li className={css.project__img_block_item}>
+                    </motion.li>
+                    <motion.li
+                      variants={projectsAnimation}
+                      custom={2}
+                      className={css.project__img_block_item}
+                    >
                       <Image
                         width="137"
                         height="300"
@@ -44,9 +93,9 @@ export default function Projects() {
                         alt=""
                         className={css.project__img}
                       />
-                    </li>
+                    </motion.li>
                   </ul>
-                </div>
+                </motion.div>
                 <div className={css.project__used_tec}>
                   <ul className={css.project__used_tec_list}>
                     <li className={css.project__used_tec_item}>mobile app</li>
@@ -128,15 +177,24 @@ export default function Projects() {
                   <h2 className={css.project__project_name}>Maven</h2>
                   <span className={css.project__project_data}>2023</span>
                 </div>
-                <div className={css.project__img_block}>
-                  <Image
-                    width="548"
-                    height="314"
-                    src="/desktop/maven.png"
-                    alt=""
-                    className={css.project__img_maven}
-                  />
-                </div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.08, once: true }}
+                  className={css.project__img_block}
+                >
+                  <ul>
+                    <motion.li variants={projectsAnimation} custom={1}>
+                      <Image
+                        width="548"
+                        height="314"
+                        src="/desktop/maven.png"
+                        alt=""
+                        className={css.project__img_maven}
+                      />
+                    </motion.li>
+                  </ul>
+                </motion.div>
                 <div className={css.project__used_tec}>
                   <ul className={css.project__used_tec_list}>
                     <li className={css.project__used_tec_item_maven}>
@@ -175,9 +233,18 @@ export default function Projects() {
                   <h2 className={css.project__project_name}>VIBOOK</h2>
                   <span className={css.project__project_data}>2023</span>
                 </div>
-                <div className={css.project__img_block}>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.08, once: true }}
+                  className={css.project__img_block}
+                >
                   <ul className={css.project__img_block_list}>
-                    <li className={css.project__img_block_item}>
+                    <motion.li
+                      variants={projectsAnimation}
+                      custom={1}
+                      className={css.project__img_block_item}
+                    >
                       <Image
                         width="137"
                         height="300"
@@ -185,8 +252,12 @@ export default function Projects() {
                         alt=""
                         className={css.project__img}
                       />
-                    </li>
-                    <li className={css.project__img_block_item}>
+                    </motion.li>
+                    <motion.li
+                      variants={projectsAnimation}
+                      custom={1.5}
+                      className={css.project__img_block_item}
+                    >
                       <Image
                         width="137"
                         height="300"
@@ -194,8 +265,12 @@ export default function Projects() {
                         alt=""
                         className={css.project__img}
                       />
-                    </li>
-                    <li className={css.project__img_block_item}>
+                    </motion.li>
+                    <motion.li
+                      variants={projectsAnimation}
+                      custom={2}
+                      className={css.project__img_block_item}
+                    >
                       <Image
                         width="137"
                         height="300"
@@ -203,9 +278,9 @@ export default function Projects() {
                         alt=""
                         className={css.project__img}
                       />
-                    </li>
+                    </motion.li>
                   </ul>
-                </div>
+                </motion.div>
                 <div className={css.project__used_tec}>
                   <ul className={css.project__used_tec_list}>
                     <li className={css.project__used_tec_item}>mobile app</li>
@@ -252,6 +327,6 @@ export default function Projects() {
           </ul>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
