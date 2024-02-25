@@ -14,7 +14,7 @@ const textAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.15 },
+    // transition: { delay: custom * 0.15 },
   }),
 };
 
@@ -26,7 +26,7 @@ const projectsAnimation = {
   visible: (custom) => ({
     x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.3 },
+    // transition: { delay: custom * 0.3 },
   }),
 };
 
@@ -57,7 +57,8 @@ export default function Projects() {
                   <ul className={css.project__img_block_list}>
                     <motion.li
                       variants={projectsAnimation}
-                      custom={1}
+                      // custom={1}
+                      transition={{ delay: 0.3, duration: 0.7 }}
                       className={css.project__img_block_item}
                     >
                       <Image
@@ -70,7 +71,8 @@ export default function Projects() {
                     </motion.li>
                     <motion.li
                       variants={projectsAnimation}
-                      custom={1.5}
+                      // custom={1.5}
+                      transition={{ delay: 0.6, duration: 0.7 }}
                       className={css.project__img_block_item}
                     >
                       <Image
@@ -83,7 +85,8 @@ export default function Projects() {
                     </motion.li>
                     <motion.li
                       variants={projectsAnimation}
-                      custom={2}
+                      // custom={2}
+                      transition={{ delay: 0.9, duration: 0.7 }}
                       className={css.project__img_block_item}
                     >
                       <Image
@@ -184,7 +187,11 @@ export default function Projects() {
                   className={css.project__img_block}
                 >
                   <ul>
-                    <motion.li variants={projectsAnimation} custom={1}>
+                    <motion.li
+                      variants={projectsAnimation}
+                      // custom={1}
+                      transition={{ delay: 0.3, duration: 0.7 }}
+                    >
                       <Image
                         width="548"
                         height="314"
@@ -242,7 +249,8 @@ export default function Projects() {
                   <ul className={css.project__img_block_list}>
                     <motion.li
                       variants={projectsAnimation}
-                      custom={1}
+                      // custom={1}
+                      transition={{ delay: 0.3, duration: 0.7 }}
                       className={css.project__img_block_item}
                     >
                       <Image
@@ -255,7 +263,8 @@ export default function Projects() {
                     </motion.li>
                     <motion.li
                       variants={projectsAnimation}
-                      custom={1.5}
+                      // custom={1.5}
+                      transition={{ delay: 0.6, duration: 0.7 }}
                       className={css.project__img_block_item}
                     >
                       <Image
@@ -268,7 +277,8 @@ export default function Projects() {
                     </motion.li>
                     <motion.li
                       variants={projectsAnimation}
-                      custom={2}
+                      // custom={2}
+                      transition={{ delay: 0.9, duration: 0.7 }}
                       className={css.project__img_block_item}
                     >
                       <Image

@@ -13,7 +13,7 @@ const leftAnimation = {
   visible: (custom) => ({
     x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.3 },
+    // transition: { delay: custom * 0.3 },
   }),
 };
 
@@ -25,7 +25,7 @@ const rightAnimation = {
   visible: (custom) => ({
     x: 0,
     opacity: 1,
-    transition: { delay: custom * 0.3 },
+    // transition: { delay: custom * 0.3 },
   }),
 };
 
@@ -37,7 +37,7 @@ const topAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.3 },
+    // transition: { delay: custom * 0.3 },
   }),
 };
 
@@ -47,11 +47,16 @@ export default function About() {
       <motion.section
         initial="hidden"
         whileInView="visible"
+        viewport={{ once: true }}
         className={css.about__section}
       >
         <div className={css.container}>
           <div className={css.about}>
-            <motion.div custom={2} variants={leftAnimation}>
+            <motion.div
+              // custom={2}
+              transition={{ delay: 0.6, duration: 0.7 }}
+              variants={leftAnimation}
+            >
               <Link href="/" className={css.link_back}>
                 <svg
                   className={css.link_back_svg}
@@ -79,7 +84,8 @@ export default function About() {
             </motion.div>
 
             <motion.div
-              custom={1}
+              // custom={1}
+              transition={{ delay: 0.3, duration: 0.7 }}
               variants={leftAnimation}
               className={css.about__image_block}
             >
@@ -131,13 +137,18 @@ export default function About() {
             </motion.div>
             <div className={css.about__summary}>
               <motion.h2
-                custom={1}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
                 variants={leftAnimation}
                 className={css.about__summary_title}
               >
                 Summary
               </motion.h2>
-              <motion.div custom={1} variants={leftAnimation}>
+              <motion.div
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+                variants={leftAnimation}
+              >
                 <p className={css.about__summary_text}>
                   I am <span className={css.text_bold}>a product designer</span>{" "}
                   from Ukraine. I{" "}
@@ -173,11 +184,13 @@ export default function About() {
             <motion.div
               initial="hidden"
               whileInView="visible"
+              viewport={{ once: true }}
               // viewport={{ amount: 0.08, once: true }}
               className={css.about__approach}
             >
               <motion.h2
-                custom={1}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
                 variants={leftAnimation}
                 className={css.about__approach_title}
               >
@@ -185,7 +198,8 @@ export default function About() {
               </motion.h2>
               <ul className={css.about__approach_list}>
                 <motion.li
-                  custom={1}
+                  // custom={1}
+                  transition={{ delay: 0.3, duration: 0.7 }}
                   variants={leftAnimation}
                   className={css.about__approach_item}
                 >
@@ -217,7 +231,8 @@ export default function About() {
                   </p>
                 </motion.li>
                 <motion.li
-                  custom={1}
+                  // custom={1}
+                  transition={{ delay: 0.3, duration: 0.7 }}
                   variants={leftAnimation}
                   className={css.about__approach_item}
                 >
@@ -251,7 +266,8 @@ export default function About() {
                   </p>
                 </motion.li>
                 <motion.li
-                  custom={1}
+                  // custom={1}
+                  transition={{ delay: 0.3, duration: 0.7 }}
                   variants={leftAnimation}
                   className={css.about__approach_item}
                 >
@@ -284,7 +300,8 @@ export default function About() {
                   </p>
                 </motion.li>
                 <motion.li
-                  custom={1}
+                  // custom={1}
+                  transition={{ delay: 0.3, duration: 0.7 }}
                   variants={leftAnimation}
                   className={css.about__approach_item}
                 >
@@ -315,7 +332,8 @@ export default function About() {
                   </p>
                 </motion.li>
                 <motion.li
-                  custom={1}
+                  // custom={1}
+                  transition={{ delay: 0.3, duration: 0.7 }}
                   variants={leftAnimation}
                   className={css.about__approach_item}
                 >
@@ -346,7 +364,8 @@ export default function About() {
                   </p>
                 </motion.li>
                 <motion.li
-                  custom={1}
+                  // custom={1}
+                  transition={{ delay: 0.3, duration: 0.7 }}
                   variants={leftAnimation}
                   className={css.about__approach_item}
                 >
@@ -376,7 +395,8 @@ export default function About() {
                   </p>
                 </motion.li>
                 <motion.li
-                  custom={1}
+                  // custom={1}
+                  transition={{ delay: 0.3, duration: 0.7 }}
                   variants={leftAnimation}
                   className={css.about__approach_item}
                 >
@@ -408,17 +428,23 @@ export default function About() {
             <motion.div
               initial="hidden"
               whileInView="visible"
+              viewport={{ once: true }}
               // viewport={{ amount: 0.08, once: true }}
               className={css.about_more}
             >
               <motion.h2
-                custom={1}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
                 variants={leftAnimation}
                 className={css.about_more_title}
               >
                 More about me
               </motion.h2>
-              <motion.div custom={1} variants={leftAnimation}>
+              <motion.div
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+                variants={leftAnimation}
+              >
                 <p className={css.about_more_text}>
                   Since childhood, I have{" "}
                   <span className={css.text_bold}>
@@ -447,9 +473,15 @@ export default function About() {
             <motion.div
               initial="hidden"
               whileInView="visible"
+              viewport={{ once: true }}
+
               // viewport={{ amount: 0.08, once: true }}
             >
-              <motion.div custom={1} variants={leftAnimation}>
+              <motion.div
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+                variants={leftAnimation}
+              >
                 <Link href="" className={css.about__contact_me}>
                   <span className={css.about__contact_me_text}>Contact me</span>
                   <svg

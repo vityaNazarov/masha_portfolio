@@ -1,45 +1,105 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import css from "./maven-group.module.css";
 
+const leftAnimation = {
+  hidden: {
+    x: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    // transition: { delay: custom * 0.3 },
+  }),
+};
+
+const rightAnimation = {
+  hidden: {
+    x: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    x: 0,
+    opacity: 1,
+    // transition: { delay: custom * 0.3 },
+  }),
+};
+
+const topAnimation = {
+  hidden: {
+    y: -100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    // transition: { delay: custom * 0.3 },
+  }),
+};
+
 export default function page() {
   return (
     <main>
-      <section className={css.ezygo__section}>
+      <motion.section
+        className={css.ezygo__section}
+        initial="hidden"
+        whileInView="visible"
+      >
         <div className={css.container}>
           <div className={css.ezygo}>
-            <Link href="/" className={css.link_back}>
-              <svg
-                className={css.link_back_svg}
-                width="32"
-                height="32"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5 12L19 12"
-                  stroke="#191919"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M12 5L19 12L12 19"
-                  stroke="#191919"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <span className={css.link_back_text}>Homepage</span>
-            </Link>
+            <motion.div
+              transition={{ delay: 0.9, duration: 0.7 }}
+              variants={leftAnimation}
+            >
+              <Link href="/" className={css.link_back}>
+                <svg
+                  className={css.link_back_svg}
+                  width="32"
+                  height="32"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 12L19 12"
+                    stroke="#191919"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M12 5L19 12L12 19"
+                    stroke="#191919"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+                <span className={css.link_back_text}>Homepage</span>
+              </Link>
+            </motion.div>
             <div className={css.main_img_block}>
-              <Image
-                src="/desktop/maven/maven-main.png"
-                alt=""
-                width="804"
-                height="461"
-              />
-              <h2 className={css.main_img_name}>Maven Group</h2>
+              <motion.div
+                transition={{ delay: 0.3, duration: 0.7 }}
+                variants={topAnimation}
+              >
+                <Image
+                  src="/desktop/maven/maven-main.png"
+                  alt=""
+                  width="804"
+                  height="461"
+                />
+              </motion.div>
+
+              <motion.h2
+                className={css.main_img_name}
+                transition={{ delay: 0.6, duration: 0.7 }}
+                variants={topAnimation}
+              >
+                Maven Group
+              </motion.h2>
             </div>
             <div className={css.about}>
               <div className={css.about_title_block}>
@@ -195,11 +255,20 @@ export default function page() {
                 </p>
               </div>
             </div>
-
             <div className={css.section_role}>
-              <div className={css.role_imgs}>
+              <motion.div
+                className={css.role_imgs}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ amount: 0.08, once: true }}
+              >
                 <ul className={css.role_imgs_list}>
-                  <li className={css.role_imgs_item}>
+                  <motion.li
+                    className={css.role_imgs_item}
+                    variants={topAnimation}
+                    // custom={1}
+                    transition={{ delay: 0.3, duration: 0.7 }}
+                  >
                     <Image
                       className={css.role_img}
                       alt=""
@@ -207,8 +276,13 @@ export default function page() {
                       height="391"
                       src="/desktop/maven/maven-role-1.png"
                     />
-                  </li>
-                  <li className={css.role_imgs_item}>
+                  </motion.li>
+                  <motion.li
+                    className={css.role_imgs_item}
+                    variants={topAnimation}
+                    // custom={1}
+                    transition={{ delay: 0.6, duration: 0.7 }}
+                  >
                     <Image
                       className={css.role_img}
                       alt=""
@@ -216,9 +290,9 @@ export default function page() {
                       height="488"
                       src="/desktop/maven/maven-role-2.png"
                     />
-                  </li>
+                  </motion.li>
                 </ul>
-              </div>
+              </motion.div>
               <div className={css.role_designer}>
                 <span className={css.role}>Role</span>
 
@@ -249,7 +323,6 @@ export default function page() {
                 <p className={css.product_designer}>UX/UI Designer</p>
               </div>
             </div>
-
             <div className={css.workflow_stages}>
               <h3 className={css.workflow_title}>Workflow Stages</h3>
               <p className={css.workflow_text}>
@@ -289,351 +362,494 @@ export default function page() {
                 />
               </svg>
             </div>
-            <div className={css.workflow_stage_block}>
-              <span className={css.workflow_stage_title_maven}>
-                Research & Moodboard
-              </span>
-            </div>
-
-            <div className={css.project_img_block}>
-              <Image
-                className={
-                  css.project_img_24 + " " + css.research_and_moodboard_1
-                }
-                alt=""
-                width="532"
-                height="295"
-                src="/desktop/maven/research-and-moodboard-1.png"
-              />
-              <Image
-                className={
-                  css.project_img_24 + " " + css.research_and_moodboard_2
-                }
-                alt=""
-                width="532"
-                height="295"
-                src="/desktop/maven/research-and-moodboard-2.png"
-              />
-            </div>
-            <div className={css.project_description_block}>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Problem</span>:
-                It was an{" "}
-                <span className={css.project_description_bold}>
-                  unknown niche
-                </span>{" "}
-                that needed research.{" "}
-                <span className={css.project_description_bold}>
-                  The client wants to see in advance the visualization
-                </span>{" "}
-                and the mood with which we will move forward.
-              </p>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Solution</span>:
-                I{" "}
-                <span className={css.project_description_bold}>
-                  studied the market and this business area in detail
-                </span>{" "}
-                to better understand it. In my research, I{" "}
-                <span className={css.project_description_bold}>
-                  relied more on the European market
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>
+                  Research & Moodboard
                 </span>
-                , as it is more developed in this area. Formulated and discussed
-                options for moodboards with the customer.
-              </p>
-            </div>
+              </motion.div>
 
-            <div className={css.workflow_stage_block}>
-              <span className={css.workflow_stage_title_maven}>
-                Competitive analysis
-              </span>
-            </div>
-
-            <div className={css.project_img_block}>
-              <Image
-                className={css.project_img_24 + " " + css.analysis_1}
-                alt=""
-                width="534"
-                height="460"
-                src="/desktop/maven/analysis-1.png"
-              />
-              <Image
-                className={css.project_img_24 + " " + css.analysis_2}
-                alt=""
-                width="534"
-                height="460"
-                src="/desktop/maven/analysis-2.png"
-              />
-            </div>
-            <div className={css.project_description_block}>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Problem</span>:
-                Analysis of direct and indirect competitors{" "}
-                <span className={css.project_description_bold}>
-                  to determine the emphasis and patterns
-                </span>{" "}
-                in this business niche,{" "}
-                <span className={css.project_description_bold}>
-                  study trends, similarities and differences
-                </span>{" "}
-                among them.
-              </p>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Solution</span>:
-                It was important for me to find out from the client{" "}
-                <span className={css.project_description_bold}>
-                  which competitors&#39; websites he considers strong and
-                  visually appealing
-                </span>
-                , what he likes and what he doesn&#39;t. Thus, in addition to my
-                personal analysis, I{" "}
-                <span className={css.project_description_bold}>
-                  learned a lot of the client&#39;s wishes and preferences
-                </span>
-                , which helped me build a further strategy.
-              </p>
-            </div>
-
-            <div className={css.workflow_stage_block}>
-              <span className={css.workflow_stage_title_maven}>
-                Wireframing
-              </span>
-            </div>
-
-            <div className={css.project_img_block}>
-              <Image
-                className={css.project_img_24 + " " + css.wireframing_1}
-                alt=""
-                width="1080"
-                height="523"
-                src="/desktop/maven/wireframing-1.jpg"
-              />
-            </div>
-            <div className={css.project_description_block}>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Problem</span>:
-                Iteratively,{" "}
-                <span className={css.project_description_bold}>
-                  through communication with the customer
-                </span>
-                , build the website architecture, taking into account all the
-                wishes, as well as{" "}
-                <span className={css.project_description_bold}>
-                  conclusions and hypotheses
-                </span>{" "}
-                from the analytics stage.
-              </p>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Solution</span>:
-                It was important to{" "}
-                <span className={css.project_description_bold}>
-                  correctly place all the information
-                </span>{" "}
-                in such a way that it would be{" "}
-                <span className={css.project_description_bold}>
-                  perceived by users with interest and simplicity
-                </span>
-                . It was also important to emphasize the customer&#39;s needs,
-                but to do so in a structured and compositional way.
-              </p>
-            </div>
-
-            <div className={css.workflow_stage_block}>
-              <span className={css.workflow_stage_title_maven}>UI stage</span>
-            </div>
-
-            <div className={css.project_img_block + " " + css.ui_stage_block}>
-              <Image
-                className={css.project_img_24 + " " + css.ui_stage_1}
-                alt=""
-                width="351"
-                height="288"
-                src="/desktop/maven/ui-stage-1.png"
-              />
-              <Image
-                className={css.project_img_24 + " " + css.ui_stage_2}
-                alt=""
-                width="351"
-                height="288"
-                src="/desktop/maven/ui-stage-2.png"
-              />
-              <Image
-                className={css.project_img_24 + " " + css.ui_stage_3}
-                alt=""
-                width="348"
-                height="288"
-                src="/desktop/maven/ui-stage-3.png"
-              />
-            </div>
-            <div className={css.project_description_block}>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Problem</span>:
-                Create a{" "}
-                <span className={css.project_description_bold}>
-                  minimalistic design
-                </span>{" "}
-                that is not cluttered with a bunch of elements{" "}
-                <span className={css.project_description_bold}>
-                  according to modern trends.
-                </span>
-              </p>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Solution</span>:
-                It should be noted that{" "}
-                <span className={css.project_description_bold}>
-                  the font, color scheme, and all content were provided by the
-                  client
-                </span>{" "}
-                for mandatory use. With certain limitations in the visual style,
-                my task was{" "}
-                <span className={css.project_description_bold}>
-                  to create a lightweight modern website
-                </span>
-                . I achieved this result by structuring the content well, making
-                the content elements large and leaving{" "}
-                <span className={css.project_description_bold}>
-                  a lot of negative space
-                </span>
-                . The client was very pleased with the result.
-              </p>
-            </div>
-
-            <div className={css.workflow_stage_block}>
-              <span className={css.workflow_stage_title_maven}>Adaptation</span>
-            </div>
-
-            <div className={css.project_img_block + " " + css.adaptation_block}>
-              <Image
-                className={css.project_img_24 + " " + css.adaptation_1}
-                alt=""
-                width="593"
-                height="341"
-                src="/desktop/maven/adaptation-1.png"
-              />
-              <div
-                className={
-                  css.project_img_subblock + " " + css.adaptation_subblock
-                }
+              <motion.div
+                className={css.project_img_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
               >
                 <Image
-                  className={css.project_img_24 + " " + css.adaptation_2}
+                  className={
+                    css.project_img_24 + " " + css.research_and_moodboard_1
+                  }
                   alt=""
-                  width="235"
-                  height="341"
-                  src="/desktop/maven/adaptation-2.png"
+                  width="532"
+                  height="295"
+                  src="/desktop/maven/research-and-moodboard-1.png"
                 />
                 <Image
-                  className={css.project_img_24 + " " + css.adaptation_3}
+                  className={
+                    css.project_img_24 + " " + css.research_and_moodboard_2
+                  }
                   alt=""
-                  width="158"
-                  height="318"
-                  src="/desktop/maven/adaptation-3.png"
+                  width="532"
+                  height="295"
+                  src="/desktop/maven/research-and-moodboard-2.png"
                 />
-              </div>
-            </div>
-            <div className={css.project_description_block}>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Problem</span>:
-                Adapt the website for tablets and mobile phones{" "}
-                <span className={css.project_description_bold}>
-                  to increase user engagement
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Problem</span>:
+                  It was an{" "}
+                  <span className={css.project_description_bold}>
+                    unknown niche
+                  </span>{" "}
+                  that needed research.{" "}
+                  <span className={css.project_description_bold}>
+                    The client wants to see in advance the visualization
+                  </span>{" "}
+                  and the mood with which we will move forward.
+                </p>
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Solution</span>
+                  : I{" "}
+                  <span className={css.project_description_bold}>
+                    studied the market and this business area in detail
+                  </span>{" "}
+                  to better understand it. In my research, I{" "}
+                  <span className={css.project_description_bold}>
+                    relied more on the European market
+                  </span>
+                  , as it is more developed in this area. Formulated and
+                  discussed options for moodboards with the customer.
+                </p>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>
+                  Competitive analysis
                 </span>
-                .
-              </p>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Solution</span>:
-                Through a thorough analysis of the features of tablets and
-                mobile devices,{" "}
-                <span className={css.project_description_bold}>
-                  the optimal size and location of the interface elements were
-                  determined
-                </span>
-                , ensuring maximum comfort and ease of use for users of any
-                device.
-              </p>
-            </div>
+              </motion.div>
 
-            <div className={css.workflow_stage_block}>
-              <span className={css.workflow_stage_title_maven}>
-                Prototyping
-              </span>
-            </div>
-            <div className={css.project_img_block}>
-              <Image
-                className={css.project_img_12 + " " + css.prototyping_1}
-                alt=""
-                width="547"
-                height="403"
-                src="/desktop/maven/prototyping-1.png"
-              />
-              <Image
-                className={css.project_img_12 + " " + css.prototyping_2}
-                alt=""
-                width="517"
-                height="403"
-                src="/desktop/maven/prototyping-2.png"
-              />
-            </div>
-            <div className={css.project_description_block}>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Problem</span>:
-                To make mockups interactive to &#187;use&#187; the application
-                and{" "}
-                <span className={css.project_description_bold}>
-                  correct logical errors in the flows
+              <motion.div
+                className={css.project_img_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={css.project_img_24 + " " + css.analysis_1}
+                  alt=""
+                  width="534"
+                  height="460"
+                  src="/desktop/maven/analysis-1.png"
+                />
+                <Image
+                  className={css.project_img_24 + " " + css.analysis_2}
+                  alt=""
+                  width="534"
+                  height="460"
+                  src="/desktop/maven/analysis-2.png"
+                />
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Problem</span>:
+                  Analysis of direct and indirect competitors{" "}
+                  <span className={css.project_description_bold}>
+                    to determine the emphasis and patterns
+                  </span>{" "}
+                  in this business niche,{" "}
+                  <span className={css.project_description_bold}>
+                    study trends, similarities and differences
+                  </span>{" "}
+                  among them.
+                </p>
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Solution</span>
+                  : It was important for me to find out from the client{" "}
+                  <span className={css.project_description_bold}>
+                    which competitors&#39; websites he considers strong and
+                    visually appealing
+                  </span>
+                  , what he likes and what he doesn&#39;t. Thus, in addition to
+                  my personal analysis, I{" "}
+                  <span className={css.project_description_bold}>
+                    learned a lot of the client&#39;s wishes and preferences
+                  </span>
+                  , which helped me build a further strategy.
+                </p>
+              </motion.div>
+            </motion.div>
+            {/* // */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>
+                  Wireframing
                 </span>
-                . Also{" "}
-                <span className={css.project_description_bold}>
-                  to show to the client before develop stage
-                </span>{" "}
-                to make him sure that all works the same as he wants.
-              </p>
-              <p className={css.project_description}>
-                <span className={css.project_description_bold}>Solution</span>:
-                While I was making the layout interactive, I saw many{" "}
-                <span className={css.project_description_bold}>
-                  errors in the flow, which I corrected later
+              </motion.div>
+              <motion.div
+                className={css.project_img_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={css.project_img_24 + " " + css.wireframing_1}
+                  alt=""
+                  width="1080"
+                  height="523"
+                  src="/desktop/maven/wireframing-1.jpg"
+                />
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Problem</span>:
+                  Iteratively,{" "}
+                  <span className={css.project_description_bold}>
+                    through communication with the customer
+                  </span>
+                  , build the website architecture, taking into account all the
+                  wishes, as well as{" "}
+                  <span className={css.project_description_bold}>
+                    conclusions and hypotheses
+                  </span>{" "}
+                  from the analytics stage.
+                </p>
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Solution</span>
+                  : It was important to{" "}
+                  <span className={css.project_description_bold}>
+                    correctly place all the information
+                  </span>{" "}
+                  in such a way that it would be{" "}
+                  <span className={css.project_description_bold}>
+                    perceived by users with interest and simplicity
+                  </span>
+                  . It was also important to emphasize the customer&#39;s needs,
+                  but to do so in a structured and compositional way.
+                </p>
+              </motion.div>
+            </motion.div>
+            {/* // */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>UI stage</span>
+              </motion.div>
+              <motion.div
+                className={css.project_img_block + " " + css.ui_stage_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={css.project_img_24 + " " + css.ui_stage_1}
+                  alt=""
+                  width="351"
+                  height="288"
+                  src="/desktop/maven/ui-stage-1.png"
+                />
+                <Image
+                  className={css.project_img_24 + " " + css.ui_stage_2}
+                  alt=""
+                  width="351"
+                  height="288"
+                  src="/desktop/maven/ui-stage-2.png"
+                />
+                <Image
+                  className={css.project_img_24 + " " + css.ui_stage_3}
+                  alt=""
+                  width="348"
+                  height="288"
+                  src="/desktop/maven/ui-stage-3.png"
+                />
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Problem</span>:
+                  Create a{" "}
+                  <span className={css.project_description_bold}>
+                    minimalistic design
+                  </span>{" "}
+                  that is not cluttered with a bunch of elements{" "}
+                  <span className={css.project_description_bold}>
+                    according to modern trends.
+                  </span>
+                </p>
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Solution</span>
+                  : It should be noted that{" "}
+                  <span className={css.project_description_bold}>
+                    the font, color scheme, and all content were provided by the
+                    client
+                  </span>{" "}
+                  for mandatory use. With certain limitations in the visual
+                  style, my task was{" "}
+                  <span className={css.project_description_bold}>
+                    to create a lightweight modern website
+                  </span>
+                  . I achieved this result by structuring the content well,
+                  making the content elements large and leaving{" "}
+                  <span className={css.project_description_bold}>
+                    a lot of negative space
+                  </span>
+                  . The client was very pleased with the result.
+                </p>
+              </motion.div>
+            </motion.div>
+            {/* // */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>
+                  Adaptation
                 </span>
-                , making the layouts and flows as a{" "}
-                <span className={css.project_description_bold}>
-                  whole completely complete and logical
+              </motion.div>
+              <motion.div
+                className={css.project_img_block + " " + css.adaptation_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={css.project_img_24 + " " + css.adaptation_1}
+                  alt=""
+                  width="593"
+                  height="341"
+                  src="/desktop/maven/adaptation-1.png"
+                />
+                <div
+                  className={
+                    css.project_img_subblock + " " + css.adaptation_subblock
+                  }
+                >
+                  <Image
+                    className={css.project_img_24 + " " + css.adaptation_2}
+                    alt=""
+                    width="235"
+                    height="341"
+                    src="/desktop/maven/adaptation-2.png"
+                  />
+                  <Image
+                    className={css.project_img_24 + " " + css.adaptation_3}
+                    alt=""
+                    width="158"
+                    height="318"
+                    src="/desktop/maven/adaptation-3.png"
+                  />
+                </div>
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Problem</span>:
+                  Adapt the website for tablets and mobile phones{" "}
+                  <span className={css.project_description_bold}>
+                    to increase user engagement
+                  </span>
+                  .
+                </p>
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Solution</span>
+                  : Through a thorough analysis of the features of tablets and
+                  mobile devices,{" "}
+                  <span className={css.project_description_bold}>
+                    the optimal size and location of the interface elements were
+                    determined
+                  </span>
+                  , ensuring maximum comfort and ease of use for users of any
+                  device.
+                </p>
+              </motion.div>
+            </motion.div>
+            {/* // */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>
+                  Prototyping
                 </span>
-                . Also with a client I discuss about the structure and using the
-                site at all, so{" "}
-                <span className={css.project_description_bold}>
-                  we came to the final version of the site
-                </span>{" "}
-                before give it to the developer.
-              </p>
-            </div>
-
-            <div className={css.workflow_stage_block}>
-              <span className={css.workflow_stage_title_maven}>
-                Development stage
-              </span>
-            </div>
-            <div className={css.project_img_block}>
-              <Image
-                className={css.project_img_12 + " " + css.development_1}
-                alt=""
-                width="1080"
-                height="419"
-                src="/desktop/maven/development-1.png"
-              />
-            </div>
-
-            <div className={css.project_description_block}>
-              <p className={css.project_description}>
-                At this stage,{" "}
-                <span className={css.project_description_bold}>
-                  I actively communicated with the developer
-                </span>{" "}
-                and together we solved certain problems and tasks that arose
-                during the creation of the site, so I got a great experience of
-                cooperation with the developer.
-              </p>
-            </div>
-
+              </motion.div>
+              <motion.div
+                className={css.project_img_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={css.project_img_12 + " " + css.prototyping_1}
+                  alt=""
+                  width="547"
+                  height="403"
+                  src="/desktop/maven/prototyping-1.png"
+                />
+                <Image
+                  className={css.project_img_12 + " " + css.prototyping_2}
+                  alt=""
+                  width="517"
+                  height="403"
+                  src="/desktop/maven/prototyping-2.png"
+                />
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Problem</span>:
+                  To make mockups interactive to &#187;use&#187; the application
+                  and{" "}
+                  <span className={css.project_description_bold}>
+                    correct logical errors in the flows
+                  </span>
+                  . Also{" "}
+                  <span className={css.project_description_bold}>
+                    to show to the client before develop stage
+                  </span>{" "}
+                  to make him sure that all works the same as he wants.
+                </p>
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Solution</span>
+                  : While I was making the layout interactive, I saw many{" "}
+                  <span className={css.project_description_bold}>
+                    errors in the flow, which I corrected later
+                  </span>
+                  , making the layouts and flows as a{" "}
+                  <span className={css.project_description_bold}>
+                    whole completely complete and logical
+                  </span>
+                  . Also with a client I discuss about the structure and using
+                  the site at all, so{" "}
+                  <span className={css.project_description_bold}>
+                    we came to the final version of the site
+                  </span>{" "}
+                  before give it to the developer.
+                </p>
+              </motion.div>
+            </motion.div>
+            {/* // */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>
+                  Development stage
+                </span>
+              </motion.div>
+              <motion.div
+                className={css.project_img_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={css.project_img_12 + " " + css.development_1}
+                  alt=""
+                  width="1080"
+                  height="419"
+                  src="/desktop/maven/development-1.png"
+                />
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={topAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  At this stage,{" "}
+                  <span className={css.project_description_bold}>
+                    I actively communicated with the developer
+                  </span>{" "}
+                  and together we solved certain problems and tasks that arose
+                  during the creation of the site, so I got a great experience
+                  of cooperation with the developer.
+                </p>
+              </motion.div>
+            </motion.div>
             <div className={css.about}>
               <div className={css.about_title_block}>
                 <h3 className={css.about_title}>Outcome</h3>
@@ -675,7 +891,6 @@ export default function page() {
                 </p>
               </div>
             </div>
-
             <div className={css.footer_links}>
               <Link href="/" className={css.footer_link}>
                 <svg
@@ -728,7 +943,7 @@ export default function page() {
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </main>
   );
 }

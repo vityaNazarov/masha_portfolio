@@ -53,6 +53,7 @@
   background: rgb(30, 30, 30);
   width: 660px;
   padding: 56px;
+  overflow: hidden;
 }
 
 .project__right_block {
@@ -175,6 +176,7 @@
   background: rgb(30, 30, 30);
   width: 660px;
   padding: 56px;
+  overflow: hidden;
 }
 
 .project__right_block_maven {

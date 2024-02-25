@@ -20,10 +20,16 @@
   margin-bottom: 8px;
 }
 
+.link_back:hover .link_back_svg {
+  transform: translateX(-5px) rotate(180deg);
+  transition: all 250ms ease-in-out;
+}
+
 .link_back_svg {
   width: 24px;
   height: 24px;
   transform: rotate(180deg);
+  transition: all 250ms ease-in-out;
 }
 
 .link_back_text {
@@ -161,6 +167,7 @@
   width: 1280px;
   margin-bottom: 64px;
   padding: 56px;
+  overflow: hidden;
 }
 
 .role_imgs {
@@ -327,11 +334,15 @@
 }
 
 .project_description_block {
+  width: 1080px;
+
   display: flex;
   flex-direction: column;
   gap: 16px;
   margin-bottom: 64px;
   margin-top: 24px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .project_description {
@@ -360,15 +371,27 @@
   gap: 10px;
 }
 
+.footer_link:hover .footer_link_svg_right {
+  transform: translateX(5px);
+  transition: all 250ms ease-in-out;
+}
+
+.footer_link:hover .footer_link_svg_left {
+  transform: translateX(-5px) rotate(180deg);
+  transition: all 250ms ease-in-out;
+}
+
 .footer_link_svg_right {
   width: 24px;
   height: 24px;
+  transition: all 250ms ease-in-out;
 }
 
 .footer_link_svg_left {
   transform: rotate(180deg);
   width: 24px;
   height: 24px;
+  transition: all 250ms ease-in-out;
 }
 
 .footer_link_text {

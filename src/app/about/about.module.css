@@ -20,11 +20,17 @@
   margin-bottom: 64px;
 }
 
+.link_back:hover .link_back_svg {
+  transform: translateX(-5px) rotate(180deg);
+  transition: all 250ms ease-in-out;
+}
+
 .link_back_svg {
   transform: rotate(180deg);
 
   width: 24px;
   height: 24px;
+  transition: all 250ms ease-in-out;
 }
 
 .link_back_text {
@@ -80,6 +86,11 @@
   margin-top: auto;
 }
 
+.about__info_link:hover .about__btn_svg {
+  transform: translate(5%, -5%);
+  transition: all 250ms ease-in-out;
+}
+
 .about__btn {
   color: rgb(251, 248, 248);
   font-family: Urbanist;
@@ -94,6 +105,7 @@
 .about__btn_svg {
   width: 40px;
   height: 40px;
+  transition: all 250ms ease-in-out;
 }
 
 .about__summary {
@@ -204,6 +216,15 @@
   gap: 10px;
   padding: 0 72px;
   height: 111px;
+}
+
+.about__contact_me:hover .about__contact_svg {
+  transform: translate(5%, -5%);
+  transition: all 250ms ease-in-out;
+}
+
+.about__contact_svg {
+  transition: all 250ms ease-in-out;
 }
 
 .about__contact_me_text {

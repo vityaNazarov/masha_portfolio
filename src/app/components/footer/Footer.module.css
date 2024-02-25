@@ -35,6 +35,11 @@
   margin-bottom: 65px;
 }
 
+.footer__contact_link:hover .footer__contact_svg {
+  transform: translate(5%, -5%);
+  transition: all 250ms ease-in-out;
+}
+
 .footer__contact_text {
   color: rgb(30, 30, 30);
   font-family: Urbanist;
@@ -47,6 +52,7 @@
 .footer__contact_svg {
   width: 64px;
   height: 64px;
+  transition: all 250ms ease-in-out;
 }
 
 .footer__contact_linkedin {
@@ -55,6 +61,11 @@
   align-items: center;
   gap: 15px;
   margin-bottom: 21px;
+}
+
+.footer__contact_linkedin:hover .footer__contact_svg {
+  transform: translate(5%, -5%);
+  transition: all 250ms ease-in-out;
 }
 
 .footer__linkedin_text {
@@ -71,6 +82,11 @@
   align-items: center;
   gap: 15px;
   margin-bottom: 64px;
+}
+
+.footer__contact_mail:hover .footer__contact_svg {
+  transform: translate(5%, -5%);
+  transition: all 250ms ease-in-out;
 }
 
 .footer__mail_text {

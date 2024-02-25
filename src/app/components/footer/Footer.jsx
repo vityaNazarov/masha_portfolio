@@ -13,7 +13,7 @@ const textAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.3 },
+    // transition: { delay: custom * 0.3 },
   }),
 };
 
@@ -27,13 +27,18 @@ export default function Footer() {
       <div className={css.container}>
         <footer className={css.footer}>
           <motion.h2
-            custom={1}
+            // custom={1}
+            transition={{ delay: 0.3, duration: 0.7 }}
             variants={textAnimation}
             className={css.footer__text}
           >
             Have a proposal for partnership?
           </motion.h2>
-          <motion.div custom={2} variants={textAnimation}>
+          <motion.div
+            // custom={2}
+            transition={{ delay: 0.6, duration: 0.7 }}
+            variants={textAnimation}
+          >
             <Link href="" className={css.footer__contact_link}>
               <span className={css.footer__contact_text}>Contact me</span>
               <svg
@@ -62,7 +67,11 @@ export default function Footer() {
             </Link>
           </motion.div>
 
-          <motion.div custom={3} variants={textAnimation}>
+          <motion.div
+            // custom={3}
+            transition={{ delay: 0.9, duration: 0.7 }}
+            variants={textAnimation}
+          >
             <Link
               href="https://www.linkedin.com/feed/"
               className={css.footer__contact_linkedin}
@@ -94,7 +103,11 @@ export default function Footer() {
             </Link>
           </motion.div>
 
-          <motion.div custom={4} variants={textAnimation}>
+          <motion.div
+            // custom={4}
+            transition={{ delay: 1.2, duration: 0.7 }}
+            variants={textAnimation}
+          >
             <Link href="" className={css.footer__contact_mail}>
               <span className={css.footer__mail_text}>Mail</span>
               <svg

@@ -13,7 +13,19 @@ const textAnimation = {
   visible: (custom) => ({
     y: 0,
     opacity: 1,
-    transition: { delay: custom * 0.3 },
+    // transition: { delay: custom * 0.3 },
+  }),
+};
+
+const textOpacity = {
+  hidden: {
+    // y: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    // y: 0,
+    opacity: 1,
+    // transition: { delay: custom * 0.3 },
   }),
 };
 
@@ -29,26 +41,33 @@ export default function Header() {
         <header className={css.header}>
           <motion.div
             variants={textAnimation}
+            transition={{ delay: 0.3, duration: 0.7 }}
             className={css.header__title_name}
           >
             <span>Mariia Nazarova </span>|<span> Product Designer</span>
           </motion.div>
           <motion.p
-            custom={1}
+            // custom={1}
             variants={textAnimation}
+            transition={{ delay: 0.6, duration: 0.7 }}
             className={css.greetings}
           >
             Hi there!
           </motion.p>
           <motion.p
-            custom={2}
+            // custom={2}
             variants={textAnimation}
+            transition={{ delay: 0.9, duration: 0.7 }}
             className={css.header__text}
           >
             I&#39;m Mariia and my job is to implement my design thinking into
             digital projects and make them high quality.
           </motion.p>
-          <motion.nav custom={4} variants={textAnimation}>
+          <motion.nav
+            // custom={4}
+            variants={textOpacity}
+            transition={{ delay: 1.4, duration: 1.5 }}
+          >
             <Link href="/about" className={css.header__btn_about}>
               <span className={css.header__btn_text}>About me</span>
               <svg
