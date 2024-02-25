@@ -39,7 +39,12 @@ export default function Footer() {
             transition={{ delay: 0.6, duration: 0.7 }}
             variants={textAnimation}
           >
-            <Link href="" className={css.footer__contact_link}>
+            <a
+              href="https://t.me/setice"
+              target="_blank"
+              rel="noreferrer"
+              className={css.footer__contact_link}
+            >
               <span className={css.footer__contact_text}>Contact me</span>
               <svg
                 width="63"
@@ -64,7 +69,7 @@ export default function Footer() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </Link>
+            </a>
           </motion.div>
 
           <motion.div
@@ -73,7 +78,9 @@ export default function Footer() {
             variants={textAnimation}
           >
             <Link
-              href="https://www.linkedin.com/feed/"
+              href="https://www.linkedin.com/in/mariia-nazarova-design/"
+              target="_blank"
+              rel="noreferrer"
               className={css.footer__contact_linkedin}
             >
               <span className={css.footer__linkedin_text}>Linkedin</span>
@@ -108,7 +115,10 @@ export default function Footer() {
             transition={{ delay: 1.2, duration: 0.7 }}
             variants={textAnimation}
           >
-            <Link href="" className={css.footer__contact_mail}>
+            <a
+              href="mailto:mariia.nzrv@gmail.com"
+              className={css.footer__contact_mail}
+            >
               <span className={css.footer__mail_text}>Mail</span>
               <svg
                 className={css.footer__contact_svg}
@@ -133,7 +143,7 @@ export default function Footer() {
                   strokeLinejoin="round"
                 />
               </svg>
-            </Link>
+            </a>
           </motion.div>
 
           <p className={css.footer__all_rights}>

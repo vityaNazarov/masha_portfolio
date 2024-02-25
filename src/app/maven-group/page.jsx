@@ -41,6 +41,18 @@ const topAnimation = {
   }),
 };
 
+const bottomAnimation = {
+  hidden: {
+    y: 100,
+    opacity: 0,
+  },
+  visible: (custom) => ({
+    y: 0,
+    opacity: 1,
+    // transition: { delay: custom * 0.3 },
+  }),
+};
+
 export default function page() {
   return (
     <main>
@@ -265,7 +277,7 @@ export default function page() {
                 <ul className={css.role_imgs_list}>
                   <motion.li
                     className={css.role_imgs_item}
-                    variants={topAnimation}
+                    variants={bottomAnimation}
                     // custom={1}
                     transition={{ delay: 0.3, duration: 0.7 }}
                   >
@@ -279,7 +291,7 @@ export default function page() {
                   </motion.li>
                   <motion.li
                     className={css.role_imgs_item}
-                    variants={topAnimation}
+                    variants={bottomAnimation}
                     // custom={1}
                     transition={{ delay: 0.6, duration: 0.7 }}
                   >
@@ -369,7 +381,7 @@ export default function page() {
             >
               <motion.div
                 className={css.workflow_stage_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -380,7 +392,7 @@ export default function page() {
 
               <motion.div
                 className={css.project_img_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -405,7 +417,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_description_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -443,7 +455,7 @@ export default function page() {
             >
               <motion.div
                 className={css.workflow_stage_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -454,7 +466,7 @@ export default function page() {
 
               <motion.div
                 className={css.project_img_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -475,7 +487,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_description_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -515,7 +527,7 @@ export default function page() {
             >
               <motion.div
                 className={css.workflow_stage_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -525,7 +537,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_img_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -539,7 +551,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_description_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -579,7 +591,7 @@ export default function page() {
             >
               <motion.div
                 className={css.workflow_stage_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -587,7 +599,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_img_block + " " + css.ui_stage_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -615,7 +627,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_description_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -659,7 +671,7 @@ export default function page() {
             >
               <motion.div
                 className={css.workflow_stage_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -669,7 +681,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_img_block + " " + css.adaptation_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -703,7 +715,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_description_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -736,7 +748,7 @@ export default function page() {
             >
               <motion.div
                 className={css.workflow_stage_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -746,7 +758,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_img_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -767,7 +779,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_description_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -811,7 +823,7 @@ export default function page() {
             >
               <motion.div
                 className={css.workflow_stage_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -821,7 +833,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_img_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
@@ -835,7 +847,7 @@ export default function page() {
               </motion.div>
               <motion.div
                 className={css.project_description_block}
-                variants={topAnimation}
+                variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >

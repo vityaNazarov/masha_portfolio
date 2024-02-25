@@ -106,7 +106,12 @@ export default function About() {
                   .
                 </p>
                 <div>
-                  <Link href="#" className={css.about__info_link}>
+                  <Link
+                    href="https://www.canva.com/design/DAF9iDLfomw/mLIATg5dPTtChsDdrNugww/view?utm_content=DAF9iDLfomw&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                    target="_blank"
+                    rel="noreferrer"
+                    className={css.about__info_link}
+                  >
                     <span className={css.about__btn}>My Resume</span>
                     <svg
                       className={css.about__btn_svg}
@@ -482,7 +487,12 @@ export default function About() {
                 transition={{ delay: 0.3, duration: 0.7 }}
                 variants={leftAnimation}
               >
-                <Link href="" className={css.about__contact_me}>
+                <a
+                  href="https://t.me/setice"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={css.about__contact_me}
+                >
                   <span className={css.about__contact_me_text}>Contact me</span>
                   <svg
                     className={css.about__contact_svg}
@@ -507,7 +517,7 @@ export default function About() {
                       strokeLinejoin="round"
                     />
                   </svg>
-                </Link>
+                </a>
               </motion.div>
             </motion.div>
           </div>
