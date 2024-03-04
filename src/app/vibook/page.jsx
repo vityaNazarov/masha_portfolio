@@ -573,14 +573,14 @@ export default function page() {
                   alt=""
                   width="577"
                   height="349"
-                  src="/desktop/vibook/benchmark-1.png"
+                  src="/desktop/vibook/Benchmark-1.png"
                 />
                 <Image
                   className={css.project_img_24 + " " + css.benchmark_2}
                   alt=""
                   width="474"
                   height="349"
-                  src="/desktop/vibook/benchmark-2.png"
+                  src="/desktop/vibook/Benchmark-2.png"
                 />
               </motion.div>
               <motion.div
@@ -636,35 +636,35 @@ export default function page() {
                   alt=""
                   width="160"
                   height="346"
-                  src="/desktop/vibook/wireframing-1.png"
+                  src="/desktop/vibook/Wireframing-1.png"
                 />
                 <Image
                   className={css.project_img_24 + " " + css.wireframing_2}
                   alt=""
                   width="160"
                   height="346"
-                  src="/desktop/vibook/wireframing-2.png"
+                  src="/desktop/vibook/Wireframing-2.png"
                 />
                 <Image
                   className={css.project_img_24 + " " + css.wireframing_3}
                   alt=""
                   width="160"
                   height="346"
-                  src="/desktop/vibook/wireframing-3.png"
+                  src="/desktop/vibook/Wireframing-3.png"
                 />
                 <Image
                   className={css.project_img_24 + " " + css.wireframing_4}
                   alt=""
                   width="160"
                   height="346"
-                  src="/desktop/vibook/wireframing-4.png"
+                  src="/desktop/vibook/Wireframing-4.png"
                 />
                 <Image
                   className={css.project_img_24 + " " + css.wireframing_5}
                   alt=""
                   width="160"
                   height="346"
-                  src="/desktop/vibook/wireframing-5.png"
+                  src="/desktop/vibook/Wireframing-5.png"
                 />
               </motion.div>
               <motion.div

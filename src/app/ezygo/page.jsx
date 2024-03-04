@@ -433,7 +433,7 @@ export default function page() {
                   alt=""
                   width="252"
                   height="472"
-                  src="/desktop/ezygo/research-2.jpg"
+                  src="/desktop/ezygo/research-2.png"
                 />
               </motion.div>
               <motion.div
@@ -447,7 +447,7 @@ export default function page() {
                   Underdeveloped niche in the European market,{" "}
                   <span className={css.project_description_bold}>
                     lack of knowledge
-                  </span>
+                  </span>{" "}
                   about the functionality and operation of Super apps in
                   general.
                 </p>
@@ -872,7 +872,7 @@ export default function page() {
                   <span className={css.project_description_bold}>
                     to work iteratively
                   </span>{" "}
-                  on many decisions regarding
+                  on many decisions regarding{" "}
                   <span className={css.project_description_bold}>
                     composition and functionality
                   </span>
@@ -1011,7 +1011,7 @@ export default function page() {
                 </p>
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Solution</span>
-                  : At the UI stage, I first conducted
+                  : At the UI stage, I first conducted{" "}
                   <span className={css.project_description_bold}>
                     research to understand the trends
                   </span>{" "}
@@ -1260,7 +1260,7 @@ export default function page() {
                   from scratch with the potential for growth.
                 </p>
                 <p className={css.about_text}>
-                  After studying the market and the audience, I realized that
+                  After studying the market and the audience, I realized that{" "}
                   <span className={css.about_text_span}>
                     users in Europe are interested in such a product
                   </span>
@@ -1272,7 +1272,7 @@ export default function page() {
                   <span className={css.about_text_span}>
                     open up this super app for development in other countries
                   </span>
-                  . My result is a product that is ready for implementation and
+                  . My result is a product that is ready for implementation and{" "}
                   <span className={css.about_text_span}>
                     meets the needs of European users
                   </span>
