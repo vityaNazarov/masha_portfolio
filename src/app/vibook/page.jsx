@@ -323,7 +323,7 @@ export default function page() {
                       alt=""
                       width="225"
                       height="488"
-                      src="/desktop/ezygo/ezygo-role-4.jpg"
+                      src="/desktop/vibook/role-4.jpg"
                     />
                   </motion.li>
                 </ul>
