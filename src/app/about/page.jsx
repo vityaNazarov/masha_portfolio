@@ -169,9 +169,9 @@ export default function About() {
                   <span className={css.text_bold}>
                     balance between business goals and people's needs
                   </span>
-                  , the shortest way to the key goal. I specialize in creating
-                  intuitive interfaces through research, hypotheses, and close
-                  collaboration with developers.
+                  , what is the shortest way to the key goal. I specialize in
+                  creating intuitive interfaces through research, hypotheses,
+                  and close collaboration with developers.
                 </p>
                 {/* <p className={css.about__summary_text}>
                   But I know for sure that{" "}
