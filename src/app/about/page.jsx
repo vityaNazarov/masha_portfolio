@@ -164,12 +164,12 @@ export default function About() {
                   and develop with us, regardless of the pitfalls.
                 </p>
                 <p className={css.about__summary_text}>
-                  For 2+ years, I have been creating products for different
+                  For my experience I have been creating products for different
                   markets &#40;Ukraine, Europe, USA&#41;, where I find a{" "}
                   <span className={css.text_bold}>
                     balance between business goals and people's needs
                   </span>
-                  , which gives the best result. I specialize in creating
+                  , the shortest way to the key goal. I specialize in creating
                   intuitive interfaces through research, hypotheses, and close
                   collaboration with developers.
                 </p>
