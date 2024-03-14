@@ -99,7 +99,7 @@ export default function About() {
 
               <div className={css.about__info}>
                 <p className={css.about__info_text}>
-                  I am Mariia, and this is not just about design, but{" "}
+                  For me this is not just about design, but{" "}
                   <span className={css.about_text_bold}>
                     about the approach, mindset, life, and love for what I do
                   </span>
@@ -156,14 +156,24 @@ export default function About() {
               >
                 <p className={css.about__summary_text}>
                   I am <span className={css.text_bold}>a product designer</span>{" "}
-                  from Ukraine. I{" "}
+                  with 2 years of experience. I create product{" "}
                   <span className={css.text_bold}>
-                    started my journey in design at the end of 2022
-                  </span>
-                  , studied a lot on my own, took on my first small web design
-                  projects.
+                    for people and with people.
+                  </span>{" "}
+                  Only in this way will the product live and simplify our lives
+                  and develop with us, regardless of the pitfalls.
                 </p>
                 <p className={css.about__summary_text}>
+                  For 2+ years, I have been creating products for different
+                  markets &#40;Ukraine, Europe, USA&#41;, where I find a{" "}
+                  <span className={css.text_bold}>
+                    balance between business goals and people's needs
+                  </span>
+                  , which gives the best result. I specialize in creating
+                  intuitive interfaces through research, hypotheses, and close
+                  collaboration with developers.
+                </p>
+                {/* <p className={css.about__summary_text}>
                   But I know for sure that{" "}
                   <span className={css.text_bold}>
                     a true professional is not defined by the number of years in
@@ -183,7 +193,7 @@ export default function About() {
                     bring great results to the business and the company
                   </span>{" "}
                   .
-                </p>
+                </p> */}
               </motion.div>
             </div>
             <motion.div
@@ -396,7 +406,11 @@ export default function About() {
                     />
                   </svg>
                   <p>
-                    be a <span className={css.text_bold}>user advocate</span>
+                    create things for people through{" "}
+                    <span className={css.text_bold}>
+                      empathy and individualized
+                    </span>{" "}
+                    approach
                   </p>
                 </motion.li>
                 <motion.li

@@ -323,7 +323,7 @@ export default function page() {
                       alt=""
                       width="225"
                       height="488"
-                      src="/desktop/vibook/role-4.jpg"
+                      src="/desktop/vibook/role-4.png"
                     />
                   </motion.li>
                 </ul>
@@ -360,13 +360,13 @@ export default function page() {
                     css.product_designer + " " + css.product_designer_none
                   }
                 >
-                  <p className={css.product_designer_bold}>
-                    Lead UX/UI Designer
+                  <p className={css.product_designer_small_text}>
+                    UX/UI Designer
                   </p>
 
-                  <p className={css.product_designer_small_text}>
+                  {/* <p className={css.product_designer_small_text}>
                     in the team of 3 person
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

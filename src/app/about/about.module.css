@@ -51,6 +51,7 @@
 
 .about__info {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   gap: 40px;
   width: 528px;
@@ -115,6 +116,7 @@
 
 .about__summary_title {
   color: rgb(30, 30, 30);
+  font-family: Urbanist;
   font-size: 80px;
   font-weight: 300;
   line-height: 96px;
@@ -151,7 +153,7 @@
 .about__approach_title {
   color: rgb(30, 30, 30);
   font-family: Urbanist;
-  font-style: italic;
+  /* font-style: italic; */
   font-size: 80px;
   font-weight: 300;
   line-height: 96px;
@@ -291,6 +293,7 @@
 
   .about__info {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     gap: 24px;
     width: 358px;

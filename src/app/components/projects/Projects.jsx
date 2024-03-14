@@ -238,7 +238,7 @@ export default function Projects() {
               <div className={css.project__left_block}>
                 <div className={css.project__info}>
                   <h2 className={css.project__project_name}>VIBOOK</h2>
-                  <span className={css.project__project_data}>2023</span>
+                  <span className={css.project__project_data}>2022</span>
                 </div>
                 <motion.div
                   initial="hidden"

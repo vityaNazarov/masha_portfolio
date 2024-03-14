@@ -60,7 +60,7 @@ export default function Header() {
             transition={{ delay: 0.9, duration: 0.7 }}
             className={css.header__text}
           >
-            I&#39;m Mariia and my job is to implement my design thinking into
+            My goal as a designer is to implement my design thinking into
             digital projects and make them high quality.
           </motion.p>
           <motion.nav
