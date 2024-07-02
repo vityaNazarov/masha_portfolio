@@ -179,6 +179,14 @@
   overflow: hidden;
 }
 
+.project__left_block_makehire {
+  border-radius: 0px 48px 48px 0px;
+  background: rgb(30, 30, 30);
+  width: 660px;
+  padding: 56px;
+  overflow: hidden;
+}
+
 .project__right_block_maven {
   border-radius: 48px 0px 0px 48px;
   background: rgb(30, 30, 30);
@@ -380,7 +388,14 @@
     border-radius: 24px 24px 0px 0px;
     background: rgb(30, 30, 30);
     width: 358px;
-    padding: 56px;
+    padding: 32px;
+  }
+
+  .project__left_block_makehire {
+    border-radius: 24px 24px 0px 0px;
+    background: rgb(30, 30, 30);
+    width: 358px;
+    padding: 32px;
   }
 
   .project__right_block_maven {

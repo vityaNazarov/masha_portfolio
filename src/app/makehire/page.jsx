@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import css from "./vibook.module.css";
+import css from "./makehire.module.css";
 
 const leftAnimation = {
   hidden: {
@@ -64,7 +64,6 @@ export default function page() {
         <div className={css.container}>
           <div className={css.ezygo}>
             <motion.div
-              // custom={3}
               transition={{ delay: 0.9, duration: 0.7 }}
               variants={leftAnimation}
             >
@@ -95,24 +94,33 @@ export default function page() {
             </motion.div>
             <div className={css.main_img_block}>
               <motion.div
-                // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
                 variants={topAnimation}
               >
                 <Image
-                  src="/desktop/vibook/vibook-main.png"
+                  src="/desktop/makehire/makehire-main.png"
                   alt=""
-                  width="600"
-                  height="468"
+                  width="804"
+                  height="461"
                 />
               </motion.div>
+
               <motion.h2
                 className={css.main_img_name}
                 transition={{ delay: 0.6, duration: 0.7 }}
                 variants={topAnimation}
               >
-                VIBOOK
+                Makehire.ai
               </motion.h2>
+            </div>
+            <div className={css.submain_img_block}>
+              <motion.p
+                className={css.submain_img_name}
+                transition={{ delay: 0.6, duration: 0.7 }}
+                variants={topAnimation}
+              >
+                *The product is under NDA, so it is presented in a limited way
+              </motion.p>
             </div>
             <div className={css.about}>
               <div className={css.about_title_block}>
@@ -143,35 +151,24 @@ export default function page() {
               </div>
               <div className={css.about_text_block}>
                 <p className={css.about_text}>
-                  VIBOOK is{" "}
+                  <span className={css.about_text_span}>Makehire.ai</span> is an{" "}
                   <span className={css.about_text_span}>
-                    a cross-platform app
+                    AI-based ATS system
                   </span>{" "}
-                  where{" "}
-                  <span className={css.about_text_span}>
-                    you can choose any book
-                  </span>{" "}
-                  depending on your preferences in the{" "}
-                  <span className={css.about_text_span}>genre</span>, the
-                  ability to read it{" "}
-                  <span className={css.about_text_span}>online/offline</span> or{" "}
-                  <span className={css.about_text_span}>
-                    listen to it in audiobook
-                  </span>{" "}
-                  format, choose from{" "}
-                  <span className={css.about_text_span}>
-                    free and paid books
-                  </span>
-                  , or <span className={css.about_text_span}>subscribe</span>{" "}
-                  and read as much as you want!
+                  for the hiring process that helps to build high-performing
+                  tech teams faster.
                 </p>
                 <p className={css.about_text}>
-                  You can choose a{" "}
-                  <span className={css.about_text_span}>child mode</span> for
-                  younger users to ensure their{" "}
+                  This is the{" "}
+                  <span className={css.about_text_span}>MVP version</span> of
+                  the product, which includes many features and functionality
+                  &#40;such as{" "}
                   <span className={css.about_text_span}>
-                    safe use of the app.
+                    Intelligent Resume Analysis, AI-Powered Interview Guides,
+                    Interview Analysis, Data-Driven Candidate Comparisons,
+                    AI-Assisted Hiring Decisions
                   </span>
+                  &#41; to effectively close the needs of the target audience.
                 </p>
               </div>
             </div>
@@ -206,16 +203,15 @@ export default function page() {
                 </span>
 
                 <p className={css.problem_and_solution_text}>
-                  Sometimes a person who likes to read books{" "}
+                  To create in the shortest possible time an MVP version of the
+                  product, which{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    doesn&#39;t have enough time
+                    will be superior in its functionality, visuals and usability
                   </span>{" "}
-                  for this hobby because, firstly, it is{" "}
+                  to its competitors and will become{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    not always possible to buy real books and carry them around
-                  </span>
-                  , and secondly, a lot of time in everyday life is spent
-                  traveling, cooking, etc.
+                    the most preferred product in its niche.
+                  </span>{" "}
                 </p>
               </div>
               <div className={css.solution_block}>
@@ -248,20 +244,36 @@ export default function page() {
                 </span>
 
                 <p className={css.problem_and_solution_text}>
-                  A cross-platform app that has a{" "}
+                  Creating a{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    wide selection of free and paid books that can be read
-                    online or offline, or listened to in audiobook formats
-                  </span>
-                  . It has a{" "}
+                    web-based version
+                  </span>{" "}
+                  of the product{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    wide range of features
-                  </span>
-                  , including a children&#39;s mode for safe use by children.
+                    using a design system, studying analytical data
+                  </span>{" "}
+                  in the product niche{" "}
+                  <span className={css.problem_and_solution_text_bold}>
+                    to identify missing functionality
+                  </span>{" "}
+                  for the target audience in similar products.
+                </p>
+                <p className={css.problem_and_solution_text}>
+                  Working out the{" "}
+                  <span className={css.problem_and_solution_text_bold}>
+                    usability of the product
+                  </span>{" "}
+                  after studying the competitors, as well as{" "}
+                  <span className={css.problem_and_solution_text_bold}>
+                    customization of the used design system
+                  </span>{" "}
+                  to get the best visual result for this project, which{" "}
+                  <span className={css.problem_and_solution_text_bold}>
+                    will remain clear and functional for users.
+                  </span>{" "}
                 </p>
               </div>
             </div>
-
             <div className={css.section_role}>
               <motion.div
                 className={css.role_imgs}
@@ -272,21 +284,21 @@ export default function page() {
                 <ul className={css.role_imgs_list}>
                   <motion.li
                     className={css.role_imgs_item}
-                    variants={topAnimation}
+                    variants={bottomAnimation}
                     // custom={1}
                     transition={{ delay: 0.3, duration: 0.7 }}
                   >
                     <Image
                       className={css.role_img}
                       alt=""
-                      width="225"
-                      height="488"
-                      src="/desktop/vibook/role-1.png"
+                      width="680"
+                      height="391"
+                      src="/desktop/makehire/makehire-role.png"
                     />
                   </motion.li>
-                  <motion.li
+                  {/* <motion.li
                     className={css.role_imgs_item}
-                    variants={topAnimation}
+                    variants={bottomAnimation}
                     // custom={1}
                     transition={{ delay: 0.6, duration: 0.7 }}
                   >
@@ -295,37 +307,9 @@ export default function page() {
                       alt=""
                       width="225"
                       height="488"
-                      src="/desktop/vibook/role-2.png"
+                      src="/desktop/maven/maven-role-2.png"
                     />
-                  </motion.li>
-                  <motion.li
-                    className={css.role_imgs_item}
-                    variants={topAnimation}
-                    // custom={1}
-                    transition={{ delay: 0.9, duration: 0.7 }}
-                  >
-                    <Image
-                      className={css.role_img}
-                      alt=""
-                      width="225"
-                      height="488"
-                      src="/desktop/vibook/role-3.png"
-                    />
-                  </motion.li>
-                  <motion.li
-                    className={css.role_imgs_item}
-                    variants={topAnimation}
-                    // custom={1}
-                    transition={{ delay: 1.2, duration: 0.7 }}
-                  >
-                    <Image
-                      className={css.role_img}
-                      alt=""
-                      width="225"
-                      height="488"
-                      src="/desktop/vibook/role-4.png"
-                    />
-                  </motion.li>
+                  </motion.li> */}
                 </ul>
               </motion.div>
               <div className={css.role_designer}>
@@ -355,36 +339,35 @@ export default function page() {
                   />
                 </svg>
 
-                <div
-                  className={
-                    css.product_designer + " " + css.product_designer_none
-                  }
-                >
-                  <p className={css.product_designer_small_text}>
-                    UX/UI Designer
-                  </p>
-
-                  {/* <p className={css.product_designer_small_text}>
-                    in the team of 3 person
-                  </p> */}
-                </div>
+                <p className={css.product_designer}>Product Designer</p>
               </div>
             </div>
-
             <div className={css.workflow_stages}>
               <h3 className={css.workflow_title}>Workflow Stages</h3>
               <p className={css.workflow_text}>
-                In this project,{" "}
+                The most important point in the development of this product was
+                to{" "}
                 <span className={css.workflow_text_bold}>
-                  I worked with two designers and took on the role of lead
-                  designer
-                </span>
-                . The most important task was{" "}
-                <span className={css.workflow_text_bold}>
-                  to distribute the workflows in stages and get a good result
+                  in-depth research the niche of AI-based products and products
+                  for the recruitment
                 </span>{" "}
-                that would allow the application to have the potential for
-                further development.
+                and their capabilities. The key to the desired result was a{" "}
+                <span className={css.workflow_text_bold}>
+                  clear teamwork and close cooperation with all its members
+                </span>
+                , such as CEO, PM, engineers, etc.
+              </p>
+              <p className={css.workflow_text}>
+                The{" "}
+                <span className={css.workflow_text_bold}>
+                  iterativeness of the workflow
+                </span>{" "}
+                on my part, as a designer, brought the team{" "}
+                <span className={css.workflow_text_bold}>
+                  to the desired outcome faster across all scenarios and the
+                  functionality
+                </span>{" "}
+                in them.
               </p>
 
               <svg
@@ -411,7 +394,6 @@ export default function page() {
                 />
               </svg>
             </div>
-
             <motion.div
               initial="hidden"
               whileInView="visible"
@@ -423,12 +405,87 @@ export default function page() {
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
-                <span className={css.workflow_stage_title}>
-                  Research & Competitive analysis
+                <span className={css.workflow_stage_title_maven}>
+                  Onboarding & Product Research
                 </span>
               </motion.div>
 
               <motion.div
+                className={css.project_img_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={
+                    css.project_img_24 + " " + css.research_and_moodboard_1
+                  }
+                  alt=""
+                  width="532"
+                  height="295"
+                  src="/desktop/makehire/makehire-onboarding-1.png"
+                />
+                <Image
+                  className={
+                    css.project_img_24 + " " + css.research_and_moodboard_2
+                  }
+                  alt=""
+                  width="532"
+                  height="295"
+                  src="/desktop/makehire/makehire-onboarding-2.png"
+                />
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Problem</span>:
+                  Since the project was started by another designer, it was
+                  necessary to understand what had been done, think{" "}
+                  <span className={css.project_description_bold}>
+                    how to refine it and create a full-fledged logic of the
+                    whole product.
+                  </span>{" "}
+                </p>
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Solution</span>
+                  : Made a{" "}
+                  <span className={css.project_description_bold}>
+                    detailed breakdown
+                  </span>{" "}
+                  of the finished small initial part of the product with
+                  revisions, detailed{" "}
+                  <span className={css.project_description_bold}>
+                    discussion with higher management on requirements and
+                    product idea
+                  </span>
+                  . Also analyzed the niche to understand the{" "}
+                  <span className={css.project_description_bold}>
+                    construction and functionality of AI-based digital products.
+                  </span>
+                </p>
+              </motion.div>
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>
+                  Competitive analysis
+                </span>
+              </motion.div>
+
+              {/* <motion.div
                 className={css.project_img_block}
                 variants={bottomAnimation}
                 // custom={1}
@@ -437,152 +494,18 @@ export default function page() {
                 <Image
                   className={css.project_img_24 + " " + css.analysis_1}
                   alt=""
-                  width="535"
-                  height="445"
-                  src="/desktop/vibook/analysis-1.png"
+                  width="534"
+                  height="460"
+                  src="/desktop/maven/analysis-1.png"
                 />
                 <Image
                   className={css.project_img_24 + " " + css.analysis_2}
                   alt=""
-                  width="535"
-                  height="445"
-                  src="/desktop/vibook/analysis-2.png"
+                  width="534"
+                  height="460"
+                  src="/desktop/maven/analysis-2.png"
                 />
-              </motion.div>
-              <motion.div
-                className={css.project_description_block}
-                variants={bottomAnimation}
-                // custom={1}
-                transition={{ delay: 0.3, duration: 0.7 }}
-              >
-                <p className={css.project_description}>
-                  <span className={css.project_description_bold}>Problem</span>:
-                  Such applications are quite common on the market, so the{" "}
-                  <span className={css.project_description_bold}>
-                    main challenge was to understand what we could create that
-                    would be more effective and unique in this niche.
-                  </span>
-                </p>
-                <p className={css.project_description}>
-                  <span className={css.project_description_bold}>Solution</span>
-                  : My team and I not only analyzed the niche and competitors,
-                  studying their apps, but also{" "}
-                  <span className={css.project_description_bold}>
-                    paid attention to user comments and feedback
-                  </span>
-                  , both positive and negative, and{" "}
-                  <span className={css.project_description_bold}>
-                    analyzed them to determine what competitors lack and what
-                    works well.
-                  </span>
-                </p>
-              </motion.div>
-            </motion.div>
-
-            {/* // */}
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ amount: 0.08, once: true }}
-            >
-              <motion.div
-                className={css.workflow_stage_block}
-                variants={bottomAnimation}
-                // custom={1}
-                transition={{ delay: 0.3, duration: 0.7 }}
-              >
-                <span className={css.workflow_stage_title}>
-                  Building an app architecture
-                </span>
-              </motion.div>
-
-              <motion.div
-                className={css.project_img_block}
-                variants={bottomAnimation}
-                // custom={1}
-                transition={{ delay: 0.3, duration: 0.7 }}
-              >
-                <Image
-                  className={css.project_img_24 + " " + css.architecture_1}
-                  alt=""
-                  width="527"
-                  height="395"
-                  src="/desktop/vibook/architecture-1.png"
-                />
-                <Image
-                  className={css.project_img_24 + " " + css.architecture_2}
-                  alt=""
-                  width="527"
-                  height="395"
-                  src="/desktop/vibook/architecture-2.png"
-                />
-              </motion.div>
-              <motion.div
-                className={css.project_description_block}
-                variants={bottomAnimation}
-                // custom={1}
-                transition={{ delay: 0.3, duration: 0.7 }}
-              >
-                <p className={css.project_description}>
-                  <span className={css.project_description_bold}>Problem</span>:
-                  The{" "}
-                  <span className={css.project_description_bold}>
-                    main difficulty was to work out a login and registration
-                  </span>{" "}
-                  that would be simple and understandable, as well as{" "}
-                  <span className={css.project_description_bold}>
-                    to see the structural hierarchy
-                  </span>{" "}
-                  of the future application.
-                </p>
-                <p className={css.project_description}>
-                  <span className={css.project_description_bold}>Solution</span>
-                  : Thanks to good communication, we were able to analyze these
-                  patterns in direct and indirect ocurrencies and{" "}
-                  <span className={css.project_description_bold}>
-                    built a simple flow
-                  </span>{" "}
-                  that allowed us to move on to the next stage of work.
-                </p>
-              </motion.div>
-            </motion.div>
-            {/* // */}
-
-            <motion.div
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ amount: 0.08, once: true }}
-            >
-              <motion.div
-                className={css.workflow_stage_block}
-                variants={bottomAnimation}
-                // custom={1}
-                transition={{ delay: 0.3, duration: 0.7 }}
-              >
-                <span className={css.workflow_stage_title}>Benchmark</span>
-              </motion.div>
-
-              <motion.div
-                className={css.project_img_block}
-                variants={bottomAnimation}
-                // custom={1}
-                transition={{ delay: 0.3, duration: 0.7 }}
-              >
-                <Image
-                  className={css.project_img_24 + " " + css.benchmark_1}
-                  alt=""
-                  width="577"
-                  height="349"
-                  src="/desktop/vibook/Benchmark-1.png"
-                />
-                <Image
-                  className={css.project_img_24 + " " + css.benchmark_2}
-                  alt=""
-                  width="474"
-                  height="349"
-                  src="/desktop/vibook/Benchmark-2.png"
-                />
-              </motion.div>
+              </motion.div> */}
               <motion.div
                 className={css.project_description_block}
                 variants={bottomAnimation}
@@ -593,23 +516,25 @@ export default function page() {
                   <span className={css.project_description_bold}>Problem</span>:
                   Understand{" "}
                   <span className={css.project_description_bold}>
-                    the trends in the pattern, functionality, and visuals
-                  </span>{" "}
-                  of applications in this particular niche.
+                    what functionality direct competitors have
+                  </span>
+                  , what visual they are using.
                 </p>
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Solution</span>
-                  : An important aspect of the successful benchmarking in this
-                  project was the{" "}
+                  : Researching and use this products as a user{" "}
                   <span className={css.project_description_bold}>
-                    study of applications from different niches to learn
-                    different user flows and patterns
-                  </span>
-                  , and to understand the quality of the visual part.
+                    to better understand their approach, communicate with
+                    potential users
+                  </span>{" "}
+                  to understand what they{" "}
+                  <span className={css.project_description_bold}>
+                    lack in the existing products
+                  </span>{" "}
+                  on the market.
                 </p>
               </motion.div>
             </motion.div>
-
             {/* // */}
             <motion.div
               initial="hidden"
@@ -622,9 +547,10 @@ export default function page() {
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
-                <span className={css.workflow_stage_title}>Wireframing</span>
+                <span className={css.workflow_stage_title_maven}>
+                  Roadmaping, Estimating and Userflows
+                </span>
               </motion.div>
-
               <motion.div
                 className={css.project_img_block}
                 variants={bottomAnimation}
@@ -634,37 +560,16 @@ export default function page() {
                 <Image
                   className={css.project_img_24 + " " + css.wireframing_1}
                   alt=""
-                  width="160"
-                  height="346"
-                  src="/desktop/vibook/Wireframing-1.png"
+                  width="534"
+                  height="301"
+                  src="/desktop/makehire/makehire-roadmaping-1.png"
                 />
                 <Image
-                  className={css.project_img_24 + " " + css.wireframing_2}
+                  className={css.project_img_24 + " " + css.wireframing_1}
                   alt=""
-                  width="160"
-                  height="346"
-                  src="/desktop/vibook/Wireframing-2.png"
-                />
-                <Image
-                  className={css.project_img_24 + " " + css.wireframing_3}
-                  alt=""
-                  width="160"
-                  height="346"
-                  src="/desktop/vibook/Wireframing-3.png"
-                />
-                <Image
-                  className={css.project_img_24 + " " + css.wireframing_4}
-                  alt=""
-                  width="160"
-                  height="346"
-                  src="/desktop/vibook/Wireframing-4.png"
-                />
-                <Image
-                  className={css.project_img_24 + " " + css.wireframing_5}
-                  alt=""
-                  width="160"
-                  height="346"
-                  src="/desktop/vibook/Wireframing-5.png"
+                  width="534"
+                  height="301"
+                  src="/desktop/makehire/makehire-roadmaping-2.png"
                 />
               </motion.div>
               <motion.div
@@ -675,31 +580,25 @@ export default function page() {
               >
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Problem</span>:
-                  To build an{" "}
+                  Give the company an{" "}
                   <span className={css.project_description_bold}>
-                    architecture similar to the final version
+                    interim job estimate, project work plan
                   </span>
-                  , to build the consistency of the project.
+                  and create userflows to{" "}
+                  <span className={css.project_description_bold}>
+                    define and validate functionality.
+                  </span>{" "}
                 </p>
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Solution</span>
-                  : When creating the wireframes we chose the{" "}
+                  : Creating a project roadmap with timelines, working on
+                  userflows to see{" "}
                   <span className={css.project_description_bold}>
-                    Hi-Fi version
-                  </span>
-                  . We selected a{" "}
-                  <span className={css.project_description_bold}>
-                    ready-made design system for use in this project
+                    the scope and complexity of the product.
                   </span>{" "}
-                  and chose Atomic Web Design System. So{" "}
-                  <span className={css.project_description_bold}>
-                    building consistency
-                  </span>{" "}
-                  began at this stage.
                 </p>
               </motion.div>
             </motion.div>
-
             {/* // */}
             <motion.div
               initial="hidden"
@@ -712,11 +611,10 @@ export default function page() {
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
-                <span className={css.workflow_stage_title}>UI stage</span>
+                <span className={css.workflow_stage_title_maven}>UI stage</span>
               </motion.div>
-
               <motion.div
-                className={css.project_img_block}
+                className={css.project_img_block + " " + css.ui_stage_block}
                 variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
@@ -724,37 +622,23 @@ export default function page() {
                 <Image
                   className={css.project_img_24 + " " + css.ui_stage_1}
                   alt=""
-                  width="208"
-                  height="450"
-                  src="/desktop/vibook/ui-stage-1.png"
+                  width="351"
+                  height="229"
+                  src="/desktop/makehire/ui-stage-1.png"
                 />
                 <Image
                   className={css.project_img_24 + " " + css.ui_stage_2}
                   alt=""
-                  width="208"
-                  height="450"
-                  src="/desktop/vibook/ui-stage-2.png"
+                  width="351"
+                  height="229"
+                  src="/desktop/makehire/ui-stage-2.png"
                 />
                 <Image
                   className={css.project_img_24 + " " + css.ui_stage_3}
                   alt=""
-                  width="208"
-                  height="450"
-                  src="/desktop/vibook/ui-stage-3.png"
-                />
-                <Image
-                  className={css.project_img_24 + " " + css.ui_stage_4}
-                  alt=""
-                  width="208"
-                  height="450"
-                  src="/desktop/vibook/ui-stage-4.png"
-                />
-                <Image
-                  className={css.project_img_24 + " " + css.ui_stage_5}
-                  alt=""
-                  width="208"
-                  height="450"
-                  src="/desktop/vibook/ui-stage-5.png"
+                  width="348"
+                  height="229"
+                  src="/desktop/makehire/ui-stage-3.png"
                 />
               </motion.div>
               <motion.div
@@ -765,31 +649,40 @@ export default function page() {
               >
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Problem</span>:
-                  Create a modern and bright-feeling visual{" "}
+                  To recreate{" "}
                   <span className={css.project_description_bold}>
-                    to translate our tone of voice
+                    in detail
                   </span>{" "}
-                  to users.
+                  all the logic and userflows of the product{" "}
+                  <span className={css.project_description_bold}>
+                    with finished visuals.
+                  </span>
                 </p>
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Solution</span>
-                  : To achieve this goal, we chose a fairly{" "}
+                  : Since the main goal was{" "}
                   <span className={css.project_description_bold}>
-                    simple but visually soft font and a fairly bright pink
-                    accent color
-                  </span>
-                  . In the process of working on the visuals, we also decided to
-                  create{" "}
+                    to finish the MVP version of the product as soon as possible
+                  </span>{" "}
+                  for the earliest possible market launch - I{" "}
                   <span className={css.project_description_bold}>
-                    a section with achievements
+                    skipped the Wireframing phase
+                  </span>{" "}
+                  and immediately started building screens across all flows{" "}
+                  <span className={css.project_description_bold}>
+                    with visuals
                   </span>
-                  , where 3D illustrations were used, as in other parts of the
-                  design, which emphasized the tone of the website and its
-                  consistency even more.
+                  . For this purpose I also used the{" "}
+                  <span className={css.project_description_bold}>
+                    design system
+                  </span>
+                  , which I{" "}
+                  <span className={css.project_description_bold}>
+                    customized for the needs of the product.
+                  </span>
                 </p>
               </motion.div>
             </motion.div>
-
             {/* // */}
             <motion.div
               initial="hidden"
@@ -802,20 +695,22 @@ export default function page() {
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
-                <span className={css.workflow_stage_title}>Prototyping</span>
+                <span className={css.workflow_stage_title_maven}>
+                  UI-System
+                </span>
               </motion.div>
               <motion.div
-                className={css.project_img_block_center}
+                className={css.project_img_block + " " + css.adaptation_block}
                 variants={bottomAnimation}
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
                 <Image
-                  className={css.project_img_12 + " " + css.prototyping_1}
+                  className={css.project_img_24 + " " + css.adaptation_1}
                   alt=""
-                  width="758"
-                  height="419"
-                  src="/desktop/vibook/prototyping.png"
+                  width="1080"
+                  height="325"
+                  src="/desktop/makehire/ui-system.png"
                 />
               </motion.div>
               <motion.div
@@ -826,24 +721,144 @@ export default function page() {
               >
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Problem</span>:
-                  To{" "}
+                  The ready-made design system, which was used in this product,{" "}
                   <span className={css.project_description_bold}>
-                    make mockups interactive to &#171;use&#187; the application
-                  </span>{" "}
-                  and correct logical errors in the flows.
+                    did not fully cover the needs of the visual and logical part
+                    of the project.
+                  </span>
+                  .
                 </p>
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Solution</span>
-                  : While I was making the layout interactive, we saw many
-                  errors in the flow, which I corrected later, making the
-                  layouts and flows as a whole completely{" "}
+                  :{" "}
                   <span className={css.project_description_bold}>
-                    complete and logical.
+                    Customize
+                  </span>{" "}
+                  the elements of the design system and{" "}
+                  <span className={css.project_description_bold}>
+                    systematize all elements into a UI-System for future project
+                    usability.
+                  </span>{" "}
+                </p>
+              </motion.div>
+            </motion.div>
+            {/* // */}
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>
+                  Creation of documentation (specification)
+                </span>
+              </motion.div>
+              <motion.div
+                className={css.project_img_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={css.project_img_12 + " " + css.prototyping_1}
+                  alt=""
+                  width="532"
+                  height="295"
+                  src="/desktop/makehire/makehire-specification-1.png"
+                />
+                <Image
+                  className={css.project_img_12 + " " + css.prototyping_2}
+                  alt=""
+                  width="532"
+                  height="295"
+                  src="/desktop/makehire/makehire-specification-2.png"
+                />
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Problem</span>:
+                  Since the product is complex with a lot of functionality and
+                  logic - development needs documentation for the correct
+                  product development process.
+                </p>
+                <p className={css.project_description}>
+                  <span className={css.project_description_bold}>Solution</span>
+                  : A{" "}
+                  <span className={css.project_description_bold}>
+                    detailed documentation
+                  </span>{" "}
+                  was made describing{" "}
+                  <span className={css.project_description_bold}>
+                    all the logic and technical nuances
+                  </span>{" "}
+                  based on the{" "}
+                  <span className={css.project_description_bold}>
+                    Tailwind document
+                  </span>
+                  , which I also{" "}
+                  <span className={css.project_description_bold}>
+                    customized for this project.
                   </span>
                 </p>
               </motion.div>
             </motion.div>
-
+            {/* // */}
+            {/* <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ amount: 0.08, once: true }}
+            >
+              <motion.div
+                className={css.workflow_stage_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <span className={css.workflow_stage_title_maven}>
+                  Development stage
+                </span>
+              </motion.div>
+              <motion.div
+                className={css.project_img_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={css.project_img_12 + " " + css.development_1}
+                  alt=""
+                  width="1080"
+                  height="419"
+                  src="/desktop/maven/development-1.png"
+                />
+              </motion.div>
+              <motion.div
+                className={css.project_description_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <p className={css.project_description}>
+                  At this stage,{" "}
+                  <span className={css.project_description_bold}>
+                    I actively communicated with the developer
+                  </span>{" "}
+                  and together we solved certain problems and tasks that arose
+                  during the creation of the site, so I got a great experience
+                  of cooperation with the developer.
+                </p>
+              </motion.div>
+            </motion.div> */}
             <div className={css.about}>
               <div className={css.about_title_block}>
                 <h3 className={css.about_title}>Outcome</h3>
@@ -873,26 +888,42 @@ export default function page() {
               </div>
               <div className={css.about_text_block}>
                 <p className={css.about_text}>
-                  By taking on the role of lead designer,{" "}
+                  <span className={css.about_text_span}>In 3 months</span>,
+                  practically from 0, I made an{" "}
                   <span className={css.about_text_span}>
-                    I was able to build a structured workflow and facilitate
-                    effective communication within the team.
-                  </span>
-                </p>
-                <p className={css.about_text}>
-                  A{" "}
-                  <span className={css.about_text_span}>
-                    competent division of responsibilities
+                    MVP version of an AI-based product for the hiring process{" "}
                   </span>{" "}
-                  helped me close work stages quickly, built a{" "}
+                  as AI-hiring assistant, which has a{" "}
                   <span className={css.about_text_span}>
-                    trusting relationship between me and the team
+                    huge potential for growth and great competitiveness{" "}
+                  </span>{" "}
+                  among the products of this niche{" "}
+                  <span className={css.about_text_span}>
+                    due to its functionality
                   </span>
-                  , and led to a good result of work in general.
+                  .
+                </p>
+
+                <p className={css.about_text}>
+                  A huge amount of work has been done{" "}
+                  <span className={css.about_text_span}>
+                    in a multifunctional team, deep analysis
+                  </span>{" "}
+                  of the niche,{" "}
+                  <span className={css.about_text_span}>
+                    competitors and users' needs
+                  </span>
+                  , work on{" "}
+                  <span className={css.about_text_span}>
+                    usability and visual part{" "}
+                  </span>{" "}
+                  to create the{" "}
+                  <span className={css.about_text_span}>
+                    functionality that is not yet available on the market.
+                  </span>
                 </p>
               </div>
             </div>
-
             <div className={css.footer_links}>
               <Link href="/" className={css.footer_link}>
                 <svg
@@ -918,7 +949,7 @@ export default function page() {
                 </svg>
                 <p className={css.footer_link_text}>Homepage</p>
               </Link>
-              <Link href="/makehire" className={css.footer_link}>
+              <Link href="/ezygo" className={css.footer_link}>
                 <p className={css.footer_link_text}>Next case</p>
                 <svg
                   className={css.footer_link_svg_right}

@@ -42,6 +42,92 @@ export default function Projects() {
         <div className={css.projects}>
           <h1 className={css.projects__title}>Projects</h1>
           <ul className={css.projects__block}>
+            <li className={css.project__block_maven}>
+              <div className={css.project__right_block_maven}>
+                <Link
+                  href="/makehire"
+                  className={css.project__right_block_link}
+                >
+                  <span className={css.project__right_text}>Overview</span>
+                  <svg
+                    width="95"
+                    height="96"
+                    viewBox="0 0 95 96"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className={css.project__right_block_svg}
+                  >
+                    <path
+                      d="M29.6991 58.0625L64.5566 37.9375"
+                      stroke="#FBF8F8"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M37.0654 30.5712L64.5566 37.9374L57.1904 65.4287"
+                      stroke="#FBF8F8"
+                      strokeWidth="4"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </Link>
+              </div>
+              <div className={css.project__left_block_makehire}>
+                <div className={css.project__info}>
+                  <h2 className={css.project__project_name}>Makehire.ai</h2>
+                  <span className={css.project__project_data}>2024</span>
+                </div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ amount: 0.08, once: true }}
+                  className={css.project__img_block}
+                >
+                  <ul>
+                    <motion.li
+                      variants={projectsAnimation}
+                      // custom={1}
+                      transition={{ delay: 0.3, duration: 0.7 }}
+                    >
+                      <Image
+                        width="548"
+                        height="314"
+                        src="/desktop/makehire.png"
+                        alt=""
+                        className={css.project__img_maven}
+                      />
+                    </motion.li>
+                  </ul>
+                </motion.div>
+                <div className={css.project__used_tec}>
+                  <ul className={css.project__used_tec_list}>
+                    <li className={css.project__used_tec_item_maven}>
+                      product designer
+                    </li>
+                    <li className={css.project__used_tec_item_maven}>ATS</li>
+                    <li className={css.project__used_tec_item_maven}>MVP</li>
+                    <li className={css.project__used_tec_item_maven}>
+                      AI hiring assistant
+                    </li>
+                    <li className={css.project__used_tec_item_maven}>
+                      business
+                    </li>
+                    <li className={css.project__used_tec_item_maven}>
+                      problem solving
+                    </li>
+                    <li className={css.project__used_tec_item_maven}>
+                      documentation
+                    </li>
+                    <li className={css.project__used_tec_item_maven}>
+                      teamwork
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
             <li className={css.project__block}>
               <div className={css.project__left_block}>
                 <div className={css.project__info}>
