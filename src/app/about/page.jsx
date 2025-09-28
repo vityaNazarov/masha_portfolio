@@ -156,7 +156,7 @@ export default function About() {
               >
                 <p className={css.about__summary_text}>
                   I am <span className={css.text_bold}>a product designer</span>{" "}
-                  with 2 years of experience. I create product{" "}
+                  with 3 years of experience. I create product{" "}
                   <span className={css.text_bold}>
                     for people and with people.
                   </span>{" "}
@@ -444,7 +444,7 @@ export default function About() {
                 </motion.li>
               </ul>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -488,7 +488,7 @@ export default function About() {
                   pictures, reading books, and playing board games :&#41;
                 </p>
               </motion.div>
-            </motion.div>
+            </motion.div> */}
             <motion.div
               initial="hidden"
               whileInView="visible"

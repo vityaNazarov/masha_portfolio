@@ -111,9 +111,7 @@ export default function Projects() {
                     <li className={css.project__used_tec_item_maven}>
                       AI hiring assistant
                     </li>
-                    <li className={css.project__used_tec_item_maven}>
-                      business
-                    </li>
+                    <li className={css.project__used_tec_item_maven}>SaaS</li>
                     <li className={css.project__used_tec_item_maven}>
                       problem solving
                     </li>

@@ -23,6 +23,7 @@ export default function Footer() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
+      className={css.footer__section}
     >
       <div className={css.container}>
         <footer className={css.footer}>
@@ -72,79 +73,81 @@ export default function Footer() {
             </a>
           </motion.div>
 
-          <motion.div
-            // custom={3}
-            transition={{ delay: 0.9, duration: 0.7 }}
-            variants={textAnimation}
-          >
-            <Link
-              href="https://www.linkedin.com/in/mariia-nazarova-design/"
-              target="_blank"
-              rel="noreferrer"
-              className={css.footer__contact_linkedin}
+          <div className={css.footer__links}>
+            <motion.div
+              // custom={3}
+              transition={{ delay: 0.9, duration: 0.7 }}
+              variants={textAnimation}
             >
-              <span className={css.footer__linkedin_text}>Linkedin</span>
-              <svg
-                className={css.footer__contact_svg}
-                width="55"
-                height="55"
-                viewBox="0 0 95 96"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <Link
+                href="https://www.linkedin.com/in/mariia-nazarova-design/"
+                target="_blank"
+                rel="noreferrer"
+                className={css.footer__contact_linkedin}
               >
-                <path
-                  d="M29.6991 58.0625L64.5566 37.9375"
-                  stroke="#FBF8F8"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M37.0654 30.5712L64.5566 37.9374L57.1904 65.4287"
-                  stroke="#FBF8F8"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </Link>
-          </motion.div>
+                <span className={css.footer__linkedin_text}>Linkedin</span>
+                <svg
+                  className={css.footer__contact_svg}
+                  width="55"
+                  height="55"
+                  viewBox="0 0 95 96"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6991 58.0625L64.5566 37.9375"
+                    stroke="#FBF8F8"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M37.0654 30.5712L64.5566 37.9374L57.1904 65.4287"
+                    stroke="#FBF8F8"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </Link>
+            </motion.div>
 
-          <motion.div
-            // custom={4}
-            transition={{ delay: 1.2, duration: 0.7 }}
-            variants={textAnimation}
-          >
-            <a
-              href="mailto:mariia.nzrv@gmail.com"
-              className={css.footer__contact_mail}
+            <motion.div
+              // custom={4}
+              transition={{ delay: 1.2, duration: 0.7 }}
+              variants={textAnimation}
             >
-              <span className={css.footer__mail_text}>Mail</span>
-              <svg
-                className={css.footer__contact_svg}
-                width="55"
-                height="56"
-                viewBox="0 0 95 96"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+              <a
+                href="mailto:mariia.nzrv@gmail.com"
+                className={css.footer__contact_mail}
               >
-                <path
-                  d="M29.6991 58.0625L64.5566 37.9375"
-                  stroke="#FBF8F8"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M37.0654 30.5712L64.5566 37.9374L57.1904 65.4287"
-                  stroke="#FBF8F8"
-                  strokeWidth="4"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </a>
-          </motion.div>
+                <span className={css.footer__mail_text}>Mail</span>
+                <svg
+                  className={css.footer__contact_svg}
+                  width="55"
+                  height="56"
+                  viewBox="0 0 95 96"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M29.6991 58.0625L64.5566 37.9375"
+                    stroke="#FBF8F8"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M37.0654 30.5712L64.5566 37.9374L57.1904 65.4287"
+                    stroke="#FBF8F8"
+                    strokeWidth="4"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </a>
+            </motion.div>
+          </div>
 
           <p className={css.footer__all_rights}>
             &#169; Mariia Nazarova 2024. All rights reserved.

@@ -67,8 +67,9 @@
 }
 
 .about_text_bold {
+  font-style: italic;
   color: rgb(30, 30, 30);
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 0px;

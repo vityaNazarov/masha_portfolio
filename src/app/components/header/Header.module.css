@@ -1,3 +1,7 @@
+.header__section {
+  background-color: rgb(30, 30, 30);
+}
+
 .container {
   width: 1280px;
   padding-left: 15px;
