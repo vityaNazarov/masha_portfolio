@@ -203,15 +203,26 @@ export default function page() {
                 </span>
 
                 <p className={css.problem_and_solution_text}>
-                  To create in the shortest possible time an MVP version of the
-                  product, which{" "}
+                  First - is to create an MVP version of the AI-based product to{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    will be superior in its functionality, visuals and usability
+                    significantly reduce the time spent by HR specialists
                   </span>{" "}
-                  to its competitors and will become{" "}
+                  and at the same time{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    the most preferred product in its niche.
+                    increase the efficiency of searching for potential
+                    candidates.
                   </span>{" "}
+                </p>
+                <p className={css.problem_and_solution_text}>
+                  Second - develop the MVP version to a{" "}
+                  <span className={css.problem_and_solution_text_bold}>
+                    competitive level in its niche
+                  </span>
+                  , develop and implement new features, develop and{" "}
+                  <span className={css.problem_and_solution_text_bold}>
+                    add AI features to differentiate the product
+                  </span>{" "}
+                  in the market.
                 </p>
               </div>
               <div className={css.solution_block}>
@@ -244,32 +255,33 @@ export default function page() {
                 </span>
 
                 <p className={css.problem_and_solution_text}>
-                  Creating a{" "}
+                  Creating of a{" "}
                   <span className={css.problem_and_solution_text_bold}>
                     web-based version
                   </span>{" "}
-                  of the product{" "}
+                  of the product using a{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    using a design system, studying analytical data
+                    design system with customization of the local UI system
                   </span>{" "}
-                  in the product niche{" "}
+                  and{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    to identify missing functionality
-                  </span>{" "}
-                  for the target audience in similar products.
+                    detailed research
+                  </span>
+                  , which helped to fully understand the scope of work required
+                  and{" "}
+                  <span className={css.problem_and_solution_text_bold}>
+                    shorten some stages of the workflow.
+                  </span>
                 </p>
                 <p className={css.problem_and_solution_text}>
-                  Working out the{" "}
+                  Implementation and refinement of AI tools and scenarios to{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    usability of the product
-                  </span>{" "}
-                  after studying the competitors, as well as{" "}
+                    increase product efficiency
+                  </span>
+                  . Work on detailed documentation for the development
+                  department to{" "}
                   <span className={css.problem_and_solution_text_bold}>
-                    customization of the used design system
-                  </span>{" "}
-                  to get the best visual result for this project, which{" "}
-                  <span className={css.problem_and_solution_text_bold}>
-                    will remain clear and functional for users.
+                    reduce product development time.
                   </span>{" "}
                 </p>
               </div>
@@ -451,20 +463,17 @@ export default function page() {
                   </span>{" "}
                 </p>
                 <p className={css.project_description}>
-                  <span className={css.project_description_bold}>Solution</span>
-                  : Made a{" "}
                   <span className={css.project_description_bold}>
-                    detailed breakdown
+                    Solution: Detailed analysis
                   </span>{" "}
-                  of the finished small initial part of the product with
-                  revisions, detailed{" "}
+                  of existing project concept and{" "}
                   <span className={css.project_description_bold}>
-                    discussion with higher management on requirements and
-                    product idea
-                  </span>
-                  . Also analyzed the niche to understand the{" "}
+                    in-depth discussion with senior management
+                  </span>{" "}
+                  on requirements and product idea helps to{" "}
                   <span className={css.project_description_bold}>
-                    construction and functionality of AI-based digital products.
+                    fully understand the future workflows and built efficient
+                    and “streamlined” plan for upcoming work.
                   </span>
                 </p>
               </motion.div>
@@ -481,7 +490,7 @@ export default function page() {
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
                 <span className={css.workflow_stage_title_maven}>
-                  Competitive analysis
+                  Competitive and User analysis
                 </span>
               </motion.div>
 
@@ -514,24 +523,34 @@ export default function page() {
               >
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Problem</span>:
-                  Understand{" "}
+                  Learn about the{" "}
                   <span className={css.project_description_bold}>
-                    what functionality direct competitors have
+                    functionality and approaches
+                  </span>{" "}
+                  of various{" "}
+                  <span className={css.project_description_bold}>
+                    competing products
                   </span>
-                  , what visual they are using.
+                  . Gain a better understanding of the{" "}
+                  <span className={css.project_description_bold}>
+                    pain points and needs of the target audience
+                  </span>{" "}
+                  for products of a similar purpose.
                 </p>
                 <p className={css.project_description}>
-                  <span className={css.project_description_bold}>Solution</span>
-                  : Researching and use this products as a user{" "}
                   <span className={css.project_description_bold}>
-                    to better understand their approach, communicate with
-                    potential users
+                    Solution: Researched and used
                   </span>{" "}
-                  to understand what they{" "}
+                  competing products as a user for better understanding of{" "}
                   <span className={css.project_description_bold}>
-                    lack in the existing products
+                    their core features and key flows. Conducted user interviews
+                    and user analysis
                   </span>{" "}
-                  on the market.
+                  with the team to{" "}
+                  <span className={css.project_description_bold}>
+                    built insights that become a strong base
+                  </span>{" "}
+                  for the future product functionality.
                 </p>
               </motion.div>
             </motion.div>
@@ -591,11 +610,25 @@ export default function page() {
                 </p>
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Solution</span>
-                  : Creating a project roadmap with timelines, working on
-                  userflows to see{" "}
+                  : Created a{" "}
                   <span className={css.project_description_bold}>
-                    the scope and complexity of the product.
+                    project roadmap with timelines
                   </span>{" "}
+                  that helps to{" "}
+                  <span className={css.project_description_bold}>
+                    make and manage future work for all the team
+                  </span>
+                  . Created{" "}
+                  <span className={css.project_description_bold}>
+                    full userflows map
+                  </span>{" "}
+                  - consist of main&#40;base&#41; and secondary userflows -
+                  helped to{" "}
+                  <span className={css.project_description_bold}>
+                    identify the main path for developing the MVP version
+                  </span>{" "}
+                  for quick launch and understand the scope of tasks for the
+                  future.
                 </p>
               </motion.div>
             </motion.div>
@@ -649,36 +682,45 @@ export default function page() {
               >
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Problem</span>:
-                  To recreate{" "}
+                  Reproduce all{" "}
                   <span className={css.project_description_bold}>
-                    in detail
+                    user flows into finished screens
                   </span>{" "}
-                  all the logic and userflows of the product{" "}
+                  while maintaining{" "}
                   <span className={css.project_description_bold}>
-                    with finished visuals.
+                    consistency
+                  </span>{" "}
+                  and create a{" "}
+                  <span className={css.project_description_bold}>
+                    project style based on the company's brandbook.
                   </span>
                 </p>
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Solution</span>
-                  : Since the main goal was{" "}
+                  : Since it was decided at previous stages to{" "}
                   <span className={css.project_description_bold}>
-                    to finish the MVP version of the product as soon as possible
+                    skip the lo-fi wireframing stage
                   </span>{" "}
-                  for the earliest possible market launch - I{" "}
+                  in order to speed up the launch of the MVP, I used a
+                  ready-made design system to{" "}
                   <span className={css.project_description_bold}>
-                    skipped the Wireframing phase
+                    create a personalized UI system
                   </span>{" "}
-                  and immediately started building screens across all flows{" "}
+                  and, using an atomic approach,{" "}
                   <span className={css.project_description_bold}>
-                    with visuals
+                    created full-fledged design elements
                   </span>
-                  . For this purpose I also used the{" "}
+                  , which{" "}
                   <span className={css.project_description_bold}>
-                    design system
-                  </span>
-                  , which I{" "}
+                    accelerated the process of completing the MVP
+                  </span>{" "}
+                  and{" "}
                   <span className={css.project_description_bold}>
-                    customized for the needs of the product.
+                    significantly reduced the number of iterations
+                  </span>{" "}
+                  and{" "}
+                  <span className={css.project_description_bold}>
+                    reduced rework for developers.
                   </span>
                 </p>
               </motion.div>
@@ -721,24 +763,40 @@ export default function page() {
               >
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Problem</span>:
-                  The ready-made design system, which was used in this product,{" "}
+                  The design system used in the project{" "}
                   <span className={css.project_description_bold}>
-                    did not fully cover the needs of the visual and logical part
-                    of the project.
+                    did not fully meet functional and visual requirements
                   </span>
-                  .
+                  . Some{" "}
+                  <span className={css.project_description_bold}>
+                    difficulties
+                  </span>{" "}
+                  were encountered{" "}
+                  <span className={css.project_description_bold}>
+                    by developers
+                  </span>{" "}
+                  when working with this design system.
                 </p>
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Solution</span>
-                  :{" "}
+                  : Using the design system as a basis, I created an{" "}
                   <span className={css.project_description_bold}>
-                    Customize
+                    adapted and customized UI System
                   </span>{" "}
-                  the elements of the design system and{" "}
+                  for the project, added atomic components, as well as fully
+                  developed UI elements.{" "}
                   <span className={css.project_description_bold}>
-                    systematize all elements into a UI-System for future project
-                    usability.
+                    Tailwind CSS
                   </span>{" "}
+                  &#40;also customized for this project&#41; was chosen to{" "}
+                  <span className={css.project_description_bold}>
+                    simplify and accelerate development
+                  </span>
+                  , and align the team with the system which{" "}
+                  <span className={css.project_description_bold}>
+                    improved consistency across the interface and reduced the
+                    handoff time for developers.
+                  </span>
                 </p>
               </motion.div>
             </motion.div>
@@ -755,7 +813,7 @@ export default function page() {
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
                 <span className={css.workflow_stage_title_maven}>
-                  Creation of documentation (specification)
+                  Creation of documentation &#40;specification&#41;
                 </span>
               </motion.div>
               <motion.div
@@ -787,17 +845,34 @@ export default function page() {
               >
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Problem</span>:
-                  Since the product is complex with a lot of functionality and
-                  logic - development needs documentation for the correct
-                  product development process.
+                  Since the product is complex, with a large number of features
+                  and logic, the developers had{" "}
+                  <span className={css.project_description_bold}>
+                    many questions and doubts, which slowed down the entire
+                    development process in the initial stages.
+                  </span>
                 </p>
                 <p className={css.project_description}>
                   <span className={css.project_description_bold}>Solution</span>
-                  : A{" "}
+                  : I created a{" "}
                   <span className={css.project_description_bold}>
-                    detailed documentation
+                    comprehensive product specification
                   </span>{" "}
-                  was made describing{" "}
+                  for the development department,{" "}
+                  <span className={css.project_description_bold}>
+                    covering all user scenarios and interactions
+                  </span>{" "}
+                  with the product to ensure accurate communication with
+                  developers. This{" "}
+                  <span className={css.project_description_bold}>
+                    almost completely eliminated any doubts or misunderstandings{" "}
+                  </span>{" "}
+                  between design and development,{" "}
+                  <span className={css.project_description_bold}>
+                    increased the speed of work, and accelerated the product's
+                    release to market.{" "}
+                  </span>{" "}
+                  {/* was made describing{" "}
                   <span className={css.project_description_bold}>
                     all the logic and technical nuances
                   </span>{" "}
@@ -808,7 +883,7 @@ export default function page() {
                   , which I also{" "}
                   <span className={css.project_description_bold}>
                     customized for this project.
-                  </span>
+                  </span> */}
                 </p>
               </motion.div>
             </motion.div>
@@ -888,38 +963,42 @@ export default function page() {
               </div>
               <div className={css.about_text_block}>
                 <p className={css.about_text}>
-                  <span className={css.about_text_span}>In 3 months</span>,
-                  practically from 0, I made an{" "}
+                  <span className={css.about_text_span}>In just 3 months</span>,
+                  starting almost from scratch,{" "}
                   <span className={css.about_text_span}>
-                    MVP version of an AI-based product for the hiring process{" "}
+                    I led the design of an MVP for an AI-driven hiring assistant{" "}
                   </span>{" "}
-                  as AI-hiring assistant, which has a{" "}
+                  — a product that streamlines the recruitment process and{" "}
                   <span className={css.about_text_span}>
-                    huge potential for growth and great competitiveness{" "}
+                    stands out in its niche with unique functionality{" "}
                   </span>{" "}
-                  among the products of this niche{" "}
-                  <span className={css.about_text_span}>
-                    due to its functionality
-                  </span>
-                  .
+                  not available on the market.
                 </p>
 
                 <p className={css.about_text}>
-                  A huge amount of work has been done{" "}
+                  Together with a multifunctional team,{" "}
                   <span className={css.about_text_span}>
-                    in a multifunctional team, deep analysis
-                  </span>{" "}
-                  of the niche,{" "}
-                  <span className={css.about_text_span}>
-                    competitors and users' needs
+                    we carried out deep research of the niche, competitors, and
+                    users’ needs, and built a product with strong usability and
+                    a polished visual system
                   </span>
-                  , work on{" "}
+                  . After launch, we iteratively enhanced existing flows and
+                  added new scenarios{" "}
                   <span className={css.about_text_span}>
-                    usability and visual part{" "}
+                    to strengthen our market positioning
+                  </span>
+                  . The{" "}
+                  <span className={css.about_text_span}>
+                    active integration of AI{" "}
                   </span>{" "}
-                  to create the{" "}
+                  into both the product and its processes{" "}
                   <span className={css.about_text_span}>
-                    functionality that is not yet available on the market.
+                    gave us a significant competitive advantage{" "}
+                  </span>
+                  and positioned the solution as a scalable, future-proof tool
+                  with{" "}
+                  <span className={css.about_text_span}>
+                    high growth potential.
                   </span>
                 </p>
               </div>

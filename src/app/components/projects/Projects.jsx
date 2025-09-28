@@ -77,7 +77,7 @@ export default function Projects() {
               <div className={css.project__left_block_makehire}>
                 <div className={css.project__info}>
                   <h2 className={css.project__project_name}>Makehire.ai</h2>
-                  <span className={css.project__project_data}>2024</span>
+                  <span className={css.project__project_data}>2024/2025</span>
                 </div>
                 <motion.div
                   initial="hidden"
@@ -130,7 +130,7 @@ export default function Projects() {
               <div className={css.project__left_block}>
                 <div className={css.project__info}>
                   <h2 className={css.project__project_name}>EZYGO</h2>
-                  <span className={css.project__project_data}>2024</span>
+                  <span className={css.project__project_data}>2023/2024</span>
                 </div>
                 <motion.div
                   initial="hidden"

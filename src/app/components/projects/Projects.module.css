@@ -70,7 +70,7 @@
 .project__info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   margin-bottom: 56px;
 }
 
@@ -86,7 +86,7 @@
 .project__project_data {
   color: rgb(251, 248, 248);
   font-family: Urbanist;
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
 }
@@ -283,7 +283,7 @@
   .project__info {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     margin-bottom: 56px;
   }
 

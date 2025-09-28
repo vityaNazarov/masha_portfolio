@@ -311,7 +311,7 @@ export default function About() {
                     <span className={css.text_bold}>
                       build cool communication
                     </span>{" "}
-                    with every person I work with
+                    to every person I work with
                   </p>
                 </motion.li>
                 <motion.li
@@ -342,8 +342,10 @@ export default function About() {
                     />
                   </svg>
                   <p>
-                    <span className={css.text_bold}>develop myself</span> every
-                    day
+                    <span className={css.text_bold}>
+                      develop and improve myself
+                    </span>{" "}
+                    every day
                   </p>
                 </motion.li>
                 <motion.li
@@ -407,10 +409,7 @@ export default function About() {
                   </svg>
                   <p>
                     create things for people through{" "}
-                    <span className={css.text_bold}>
-                      empathy and individualized
-                    </span>{" "}
-                    approach
+                    <span className={css.text_bold}>empathy</span>
                   </p>
                 </motion.li>
                 <motion.li
