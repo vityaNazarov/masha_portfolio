@@ -149,9 +149,15 @@ export default function Footer() {
             </motion.div>
           </div>
 
-          <p className={css.footer__all_rights}>
-            &#169; Mariia Nazarova 2024. All rights reserved.
-          </p>
+          <motion.div
+            // custom={4}
+            transition={{ delay: 1.5, duration: 0.7 }}
+            variants={textAnimation}
+          >
+            <p className={css.footer__all_rights}>
+              &#169; Mariia Nazarova 2025. All rights reserved.
+            </p>
+          </motion.div>
         </footer>
       </div>
     </motion.section>
