@@ -305,7 +305,7 @@ export default function page() {
                       src="/desktop/ezygo/ezygo-role-2.jpg"
                     />
                   </motion.li>
-                  <motion.li
+                  {/* <motion.li
                     className={css.role_imgs_item}
                     variants={topAnimation}
                     // custom={1}
@@ -318,7 +318,7 @@ export default function page() {
                       height="488"
                       src="/desktop/ezygo/ezygo-role-3.jpg"
                     />
-                  </motion.li>
+                  </motion.li> */}
                   <motion.li
                     className={css.role_imgs_item}
                     variants={topAnimation}
@@ -665,13 +665,13 @@ export default function page() {
                 // custom={1}
                 transition={{ delay: 0.3, duration: 0.7 }}
               >
-                <Image
+                {/* <Image
                   className={css.project_img_24 + " " + css.architecture_1}
                   alt=""
                   width="342"
                   height="600"
                   src="/desktop/ezygo/architecture-1.jpg"
-                />
+                /> */}
                 <Image
                   className={css.project_img_24 + " " + css.architecture_2}
                   alt=""
@@ -956,7 +956,7 @@ export default function page() {
                   src="/desktop/ezygo/ui-stage-6.jpg"
                 />
               </motion.div>
-              <motion.div
+              {/* <motion.div
                 className={css.project_img_block}
                 variants={bottomAnimation}
                 // custom={1}
@@ -1004,7 +1004,7 @@ export default function page() {
                   height="342"
                   src="/desktop/ezygo/ui-stage-12.jpg"
                 />
-              </motion.div>
+              </motion.div> */}
               <motion.div
                 className={css.project_description_block}
                 variants={bottomAnimation}
@@ -1132,6 +1132,20 @@ export default function page() {
                 <Image
                   className={css.project_img_0 + " " + css.ui_system_1}
                   alt=""
+                  width="534"
+                  height="372"
+                  src="/desktop/ezygo/new-ui-system-1.jpg"
+                />
+              </motion.div>
+              {/* <motion.div
+                className={css.project_img_block}
+                variants={bottomAnimation}
+                // custom={1}
+                transition={{ delay: 0.3, duration: 0.7 }}
+              >
+                <Image
+                  className={css.project_img_0 + " " + css.ui_system_1}
+                  alt=""
                   width="276"
                   height="396"
                   src="/desktop/ezygo/ui-system-1.jpg"
@@ -1201,7 +1215,7 @@ export default function page() {
                   height="197"
                   src="/desktop/ezygo/ui-system-9.jpg"
                 />
-              </motion.div>
+              </motion.div> */}
               <motion.div
                 className={css.project_description_block}
                 variants={bottomAnimation}

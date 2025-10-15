@@ -699,7 +699,7 @@ export default function page() {
                   <span className={css.project_description_bold}>Solution</span>
                   : Since it was decided at previous stages to{" "}
                   <span className={css.project_description_bold}>
-                    skip the lo-fi wireframing stage
+                    skip wireframing stage
                   </span>{" "}
                   in order to speed up the launch of the MVP, I used a
                   ready-made design system to{" "}
