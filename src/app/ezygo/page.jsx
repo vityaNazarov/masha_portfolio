@@ -116,6 +116,16 @@ export default function page() {
                 EZYGO
               </motion.h2>
             </div>
+            <div className={css.submain_img_block}>
+              <motion.p
+                className={css.submain_img_name}
+                transition={{ delay: 0.6, duration: 0.7 }}
+                variants={topAnimation}
+              >
+                *The product is under NDA, so it is presented in a limited way
+                with changed decisions and UI
+              </motion.p>
+            </div>
             <div className={css.about}>
               <div className={css.about_title_block}>
                 <h3 className={css.about_title}>About</h3>
