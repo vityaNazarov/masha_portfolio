@@ -1279,7 +1279,7 @@ export default function page() {
               <div className={css.about_text_block}>
                 <p className={css.about_text}>
                   <span className={css.about_text_span}>
-                    In 10 months, I created a high-quality product
+                    In 11 months, I created a high-quality product
                   </span>{" "}
                   from scratch with the potential for growth.
                 </p>
