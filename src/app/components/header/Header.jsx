@@ -68,8 +68,13 @@ export default function Header() {
             variants={textOpacity}
             transition={{ delay: 1.4, duration: 1.5 }}
           >
-            <Link href="/about" className={css.header__btn_about}>
-              <span className={css.header__btn_text}>About me</span>
+            <Link
+              href="https://docs.google.com/document/d/1XVWMjHba-xuNtGOkeHhxtlAePj_y-JfaAS54HxTUiPM/edit?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className={css.header__btn_about}
+            >
+              <span className={css.header__btn_text}>My Resume</span>
               <svg
                 width="63"
                 height="63"

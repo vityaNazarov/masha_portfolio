@@ -107,7 +107,7 @@ export default function About() {
                 </p>
                 <div>
                   <Link
-                    href="https://www.canva.com/design/DAF9iDLfomw/mLIATg5dPTtChsDdrNugww/view?utm_content=DAF9iDLfomw&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                    href="https://docs.google.com/document/d/1XVWMjHba-xuNtGOkeHhxtlAePj_y-JfaAS54HxTUiPM/edit?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                     className={css.about__info_link}
